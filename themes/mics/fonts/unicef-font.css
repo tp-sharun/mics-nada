@@ -1,8 +1,0 @@
-@font-face {
-  font-family: 'Unicef';
-  src: url("Unicef-Icons.ttf");
-}
-
-:root {
-  --unicef-icon: 'Unicef';
-}
