@@ -1,0 +1,77 @@
+.heading-style-1 {
+  font-size: 2.625rem;
+  line-height: 1.19;
+  font-weight: var(--primary-regular);
+  color: var(--regular-gray1);
+  margin-bottom: 24px;
+}
+
+.heading-style-2 {
+  font-size: 2.125rem;
+  line-height: 1.23;
+  font-weight: var(--primary-regular);
+  color: var(--regular-gray1);
+  margin-bottom: 15px;
+}
+
+.heading-style-3 {
+  font-size: 1.875rem;
+  line-height: 1.26;
+  font-weight: var(--primary-regular);
+  color: var(--regular-gray1);
+  margin-bottom: 15px;
+}
+
+.heading-style-4 {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: var(--primary-regular);
+  color: var(--regular-gray1);
+  margin-bottom: 15px;
+}
+
+.heading-style-5,
+.table-responsive .field-title {
+  font-size: 1.375rem;
+  line-height: 1.27;
+  font-weight: var(--primary-regular);
+  color: var(--regular-gray1);
+  margin-bottom: 15px;
+}
+
+.paragraph-style-1 {
+  font-size: 1.188rem;
+  line-height: 1.63;
+  color: var(--regular-gray1);
+}
+
+.paragraph-style-2 {
+  font-size: 0.875rem;
+  line-height: 1.28;
+}
+
+.paragraph-style-3 {
+  font-size: 1rem;
+  line-height: 1.375;
+}
+
+.paragraph-style-4 {
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+.text-medium {
+  font-weight: var(--primary-medium);
+}
+
+.text-bold {
+  font-weight: var(--primary-bold);
+}
+
+.wb-label {
+  color: var(--regular-gray4);
+}
+
+.wb-value {
+  color: var(--regular-gray2);
+}

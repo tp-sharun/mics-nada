@@ -1,0 +1,54 @@
+.listing-item {
+  margin-bottom: 11px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--regular-gray5);
+}
+
+.listing-item h5 {
+  margin-bottom: 5px;
+}
+
+.study-type-icon {
+  margin-right: 20px;
+}
+
+.dataset-nation-year,
+.survey-stats {
+  color: var(--regular-gray4);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.dataset-nation-year,
+.survey-stats,
+.survey-desc {
+  margin-bottom: 6px;
+  padding: 6px 0;
+}
+
+.listing-deatil-2 {
+  padding: 6px 0;
+}
+
+.dataset-nation-year:last-child,
+.survey-stats:last-child {
+  margin-bottom: 0;
+}
+
+.latest-block {
+  padding-right: 45px;
+}
+
+.survey-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 33px 8px 0;
+}
+
+.last-modified {
+  text-align: center;
+}
+
+.views-item {
+  text-align: right;
+}

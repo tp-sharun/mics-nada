@@ -1,0 +1,72 @@
+.detail-tab {
+  border-bottom: 1px solid var(--regular-gray5);
+}
+
+
+/*Data dictionary*/
+.study-metadata .tab-sidebar form {
+  display: none;
+}
+
+.study-metadata .nada-list-group {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.study-metadata .nada-list-group-item {
+  border-bottom: 1px solid var(--regular-gray5);
+  padding: 8px 15px;
+  font-size: 1rem;
+}
+
+.study-metadata .nada-list-group-item a {
+  color: var(--regular-gray1);
+}
+
+.study-metadata .nada-list-group-item a {
+  color: var(--regular-gray1);
+}
+
+.study-metadata .nada-list-group-title {
+  display: none;
+}
+
+.study-metadata .container-fluid {
+  padding-left: 0;
+}
+
+.metadata-sidebar-container .nav-link {
+  padding: 8px 15px 8px 0;
+  font-size: 1rem;
+  line-height: 1.375;
+  color: var(--regular-gray1);
+}
+
+.metadata-sidebar-container .active {
+  color: var(--nada-blue-color);
+  background: transparent;
+}
+
+.sticky-top {
+  top: 80px;
+}
+
+.table-variable-list .var-row {
+  padding: 13.5px 0;
+  border-bottom: 1px solid var(--regular-gray5);
+  position: relative;
+}
+
+.table-variable-list .var-row .icon-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h2.field-section {
+  border-bottom: 1px solid var(--regular-gray5);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}

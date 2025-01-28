@@ -1,0 +1,43 @@
+:root {
+  --block-space: 60px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.page-content-section {
+  padding: var(--block-space) 0;
+}
+
+.box-style {
+  padding: 20px 15px;
+  background-color: var(--regular-gray6);
+}
+
+.box-style-margin-top {
+  margin-top: 30px;
+}
+
+.scroll-style {
+  overflow: auto;
+}
+
+.scroll-style::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 5px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--regular-gray5);
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Unicef';
+  src: url('/themes/mics/components/unicef-font/Unicef-Icons.woff2') format('woff2'),
+    url('/themes/mics/components/unicef-font/Unicef-Icons.woff') format('woff');
+}
+
+:root {
+  --unicef-icon: 'Unicef';
+}

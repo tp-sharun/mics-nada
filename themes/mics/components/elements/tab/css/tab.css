@@ -1,0 +1,72 @@
+.tab-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-menu .tab-item {
+  font-size: 0.875rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--regular-gray1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  border: none;
+  margin: 0 2.5px;
+  background: none;
+  white-space: unset;
+  padding: 17px 27px;
+  background: var(--regular-gray6);
+  font-weight: var(--primary-bold);
+
+}
+
+.tab-menu .tab-item:first-child {
+  margin-left: 0;
+}
+
+.tab-menu .tab-item:has(a) {
+  padding: 0;
+}
+
+.tab-menu .tab-item a {
+  padding: 17px 27px;
+  display: block;
+}
+
+.tab-menu .tab-item:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.tab-menu .tab-item a {
+  color: var(--regular-gray1);
+}
+
+.tab-menu .active:before,
+.nav-tabs .nav-item.active a:before {
+  border-top: 5px solid var(--primary-color);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.tab-menu .active,
+.nav-tabs .nav-item.active a {
+  box-shadow: none;
+  position: relative;
+  color: var(--regular-gray1);
+  cursor: default;
+  background-color: var(--regular-gray6);
+}
+
+
+.search-count {}

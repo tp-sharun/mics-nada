@@ -1,0 +1,3870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook version="1.2.2" ID="BGD_2021_FINDEX_v02_M" xml-lang="en" xmlns="http://www.icpsr.umich.edu/DDI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.icpsr.umich.edu/DDI http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd">
+<docDscr>
+  <citation>
+    <titlStmt>
+      <IDNo>DDI_BGD_2021_FINDEX_v02_M_WB</IDNo>
+    </titlStmt>
+    <prodStmt>
+      <producer abbr="DECDG" affiliation="The World Bank" role="Documentation of the DDI">Development Economics Data Group</producer>
+      <prodDate date="2022-12-07">2022-12-07</prodDate>
+      <software version="v5">NADA</software>
+    </prodStmt>
+    <verStmt>
+      <version>Version 02 (December 2022).</version>
+    </verStmt>
+  </citation>
+</docDscr>
+<stdyDscr>
+  <citation>
+    <titlStmt>
+      <titl>Global Financial Inclusion (Global Findex) Database 2021</titl>
+      <subTitl/>
+      <altTitl>FINDEX 2021</altTitl>
+      <parTitl/>
+      <IDNo>BGD_2021_FINDEX_v02_M</IDNo>
+    </titlStmt>
+    <rspStmt>
+      <AuthEnty affiliation="World Bank">Development Research Group, Finance and Private Sector Development Unit</AuthEnty>
+    </rspStmt>
+    <prodStmt>
+      <producer abbr="" affiliation="" role="Carried out the survey in association with its annual Gallup World Poll.">Gallup, Inc.</producer>
+      <copyright/>
+      <software version="5.0" date="2022-12-20">NADA</software>
+      <fundAg abbr="" role="Funded the study">Development Research Group, World Bank</fundAg>
+      <fundAg abbr="" role="Financial support">The Bill and Melinda Gates Foundation</fundAg>
+      <grantNo/>
+    </prodStmt>
+    <distStmt>
+      <contact affiliation="World Bank" URI="https://www.worldbank.org/en/publication/globalfindex" email="globalfindex@worldbank.org">Global Findex</contact>
+      <contact affiliation="World Bank" URI="" email="sansar1@worldbank.org">Saniya Ansar</contact>
+      <contact affiliation="World Bank" URI="" email="jwang36@worldbank.org">Jijun Wang</contact>
+      <depDate date=""/>
+      <distDate date=""/>
+    </distStmt>
+    <serStmt>
+      <serName>Other Household Survey [hh/oth]</serName>
+      <serInfo><![CDATA[The Global Findex is the world's most comprehensive database on financial inclusion. It is also the only global demand-side data source allowing for global and regional cross-country analysis to provide a rigorous and multidimensional picture of how adults save, borrow, make payments, and manage financial risks. Global Findex 2021 data were collected from national representative surveys of about 128,000 adults in more than 120 economies. The latest edition follows the 2011, 2014, and 2017 editions, and it includes a number of new series measuring financial health and resilience and contains more granular data on digital payment adoption, including merchant and government payments. Phone surveys were not a viable option in 17 economies that had been part of previous Global Findex surveys, however, because of low mobile phone ownership and surveying restrictions. Data for these economies will be collected in 2022 and released in 2023.]]></serInfo>
+    </serStmt>
+    <verStmt>
+      <version date="2022-12-05">Version 02: Edited, anonymous dataset for public distribution.</version>
+      <verResp/>
+      <notes><![CDATA[This is the first update (Dec 2022) to the microdata originally released in Oct 2022. This release includes new variables, updated labels along with a detailed codebook allowing you to access the Global Findex 2021 individual level data in a more meaningful way. Please also see Microdata_update_details.xlsx which details these updates.]]></notes>
+    </verStmt>
+    <biblCit format=""><![CDATA[]]></biblCit>
+    <notes><![CDATA[]]></notes>
+  </citation>
+  <stdyInfo>
+    <studyBudget><![CDATA[]]></studyBudget>
+    <subject>
+    </subject>
+    <abstract><![CDATA[The fourth edition of the Global Findex offers a lens into how people accessed and used financial services during the COVID-19 pandemic, when mobility restrictions and health policies drove increased demand for digital services of all kinds.
+
+The Global Findex is the world's most comprehensive database on financial inclusion. It is also the only global demand-side data source allowing for global and regional cross-country analysis to provide a rigorous and multidimensional picture of how adults save, borrow, make payments, and manage financial risks. Global Findex 2021 data were collected from national representative surveys of about 128,000 adults in more than 120 economies. The latest edition follows the 2011, 2014, and 2017 editions, and it includes a number of new series measuring financial health and resilience and contains more granular data on digital payment adoption, including merchant and government payments.
+
+The Global Findex is an indispensable resource for financial service practitioners, policy makers, researchers, and development professionals.]]></abstract>
+    <sumDscr>
+      <collDate date="2022-02-27" event="start" cycle=""/>
+      <collDate date="2022-03-30" event="end" cycle=""/>
+      <nation abbr="BGD">Bangladesh</nation>
+      <geogCover>National coverage</geogCover>
+      <geogUnit/>
+      <anlyUnit><![CDATA[Individual]]></anlyUnit>
+      <universe><![CDATA[]]></universe>
+      <dataKind>Observation data/ratings [obs]</dataKind>
+    </sumDscr>
+    <qualityStatement>
+      <standardsCompliance>
+        <standard>
+          <standardName/>
+          <producer/>
+        </standard>
+        <complianceDescription/>
+      </standardsCompliance>
+      <otherQualityStatement/>
+    </qualityStatement>
+    <notes><![CDATA[The indicators in the Global Findex 2021 database are drawn from survey data covering almost 128,000 people in 123 economies, representing 91 percent of the world's population.  Data is available for 2021, 2017, 2014, and 2011.]]></notes>
+    <exPostEvaluation completionDate="" type="">
+      <evaluationProcess/>
+      <outcomes/>
+    </exPostEvaluation>
+  </stdyInfo>
+  <method>
+    <dataColl>
+      <timeMeth/>
+      <frequenc/>
+      <sampProc><![CDATA[In most developing economies, Global Findex data have traditionally been collected through face-to-face interviews. Surveys are conducted face-to-face in economies where telephone coverage represents less than 80 percent of the population or where in-person surveying is the customary methodology. However, because of ongoing COVID-19 related mobility restrictions, face-to-face interviewing was not possible in some of these economies in 2021. Phone-based surveys were therefore conducted in 67 economies that had been surveyed face-to-face in 2017. These 67 economies were selected for inclusion based on population size, phone penetration rate, COVID-19 infection rates, and the feasibility of executing phone-based methods where Gallup would otherwise conduct face-to-face data collection, while complying with all government-issued guidance throughout the interviewing process. Gallup takes both mobile phone and landline ownership into consideration. According to Gallup World Poll 2019 data, when face-to-face surveys were last carried out in these economies, at least 80 percent of adults in almost all of them reported mobile phone ownership. All samples are probability-based and nationally representative of the resident adult population. Phone surveys were not a viable option in 17 economies that had been part of previous Global Findex surveys, however, because of low mobile phone ownership and surveying restrictions. Data for these economies will be collected in 2022 and released in 2023.
+
+In economies where face-to-face surveys are conducted, the first stage of sampling is the identification of primary sampling units. These units are stratified by population size, geography, or both, and clustering is achieved through one or more stages of sampling. Where population information is available, sample selection is based on probabilities proportional to population size; otherwise, simple random sampling is used. Random route procedures are used to select sampled households. Unless an outright refusal occurs, interviewers make up to three attempts to survey the sampled household. To increase the probability of contact and completion, attempts are made at different times of the day and, where possible, on different days. If an interview cannot be obtained at the initial sampled household, a simple substitution method is used. Respondents are randomly selected within the selected households. Each eligible household member is listed, and the hand-held survey device randomly selects the household member to be interviewed. For paper surveys, the Kish grid method is used to select the respondent. In economies where cultural restrictions dictate gender matching, respondents are randomly selected from among all eligible adults of the interviewer's gender.
+
+In traditionally phone-based economies, respondent selection follows the same procedure as in previous years, using random digit dialing or a nationally representative list of phone numbers. In most economies where mobile phone and landline penetration is high, a dual sampling frame is used.
+
+The same respondent selection procedure is applied to the new phone-based economies. Dual frame (landline and mobile phone) random digital dialing is used where landline presence and use are 20 percent or higher based on historical Gallup estimates. Mobile phone random digital dialing is used in economies with limited to no landline presence (less than 20 percent).
+
+For landline respondents in economies where mobile phone or landline penetration is 80 percent or higher, random selection of respondents is achieved by using either the latest birthday or household enumeration method. For mobile phone respondents in these economies or in economies where mobile phone or landline penetration is less than 80 percent, no further selection is performed. At least three attempts are made to reach a person in each household, spread over different days and times of day.
+
+Sample size for Bangladesh is 1000.]]></sampProc>
+      <sampleFrame>
+        <sampleFrameName/>
+        <custodian/>
+        <universe/>
+        <frameUnit isPrimary="">
+          <unitType numberOfUnits=""/>
+        </frameUnit>
+        <updateProcedure/>
+      </sampleFrame>
+      <deviat/>
+      <collMode>Face-to-face [f2f]</collMode>
+      <resInstru><![CDATA[Questionnaires are available on the website.]]></resInstru>
+      <instrumentDevelopment type=""/>
+      <collSitu><![CDATA[Data was collected in the following language(s): Bengali ]]></collSitu>
+      <actMin><![CDATA[]]></actMin>
+      <ConOps><![CDATA[]]></ConOps>
+      <weight><![CDATA[Data weighting is used to ensure a nationally representative sample for each economy. Final weights consist of the base sampling weight, which corrects for unequal probability of selection based on household size, and the poststratification weight, which corrects for sampling and nonresponse error. Poststratification weights use economy-level population statistics on gender and age and, where reliable data are available, education or socioeconomic status.]]></weight>
+      <cleanOps><![CDATA[]]></cleanOps>
+    </dataColl>
+    <notes><![CDATA[]]></notes>
+    <anlyInfo>
+      <respRate><![CDATA[]]></respRate>
+      <EstSmpErr><![CDATA[Estimates of standard errors (which account for sampling error) vary by country and indicator. For country-specific margins of error, please refer to the Methodology section and corresponding table in Demirgüç-Kunt, Asli, Leora Klapper, Dorothe Singer, Saniya Ansar. 2022. The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19. Washington, DC: World Bank.]]></EstSmpErr>
+      <dataAppr><![CDATA[]]></dataAppr>
+    </anlyInfo>
+    <stdyClas><![CDATA[]]></stdyClas>
+    <dataProcessing type=""/>
+    <codingInstructions relatedProcesses="" type="">
+      <txt/>
+      <command formalLanguage=""/>
+    </codingInstructions>
+  </method>
+  <dataAccs>
+    <setAvail>
+      <accsPlac URI=""/>
+      <origArch/>
+      <avlStatus/>
+      <collSize/>
+      <complete/>
+      <fileQnty/>
+      <notes><![CDATA[]]></notes>
+    </setAvail>
+    <useStmt>
+      <restrctn/>
+      <contact affiliation="World Bank" URI="https://www.worldbank.org/en/publication/globalfindex" email="globalfindex@worldbank.org">GlobalFindex</contact>
+      <citReq><![CDATA[Demirgüç-Kunt, Asli, Leora Klapper, Dorothe Singer, Saniya Ansar. 2022. The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19. Washington, DC: World Bank.]]></citReq>
+      <deposReq><![CDATA[]]></deposReq>
+      <conditions><![CDATA[]]></conditions>
+      <disclaimer><![CDATA[The user of the data acknowledges that the original collector of the data, the authorized distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses.]]></disclaimer>
+    </useStmt>
+    <notes><![CDATA[]]></notes>
+  </dataAccs>
+  <notes><![CDATA[]]></notes>
+</stdyDscr>
+<fileDscr ID="F1">
+  <fileTxt>
+    <fileName>micro_bgd.dta</fileName>
+    <fileCont>2021 Global Findex  - Bangladesh Microdata</fileCont>
+    <dimensns>
+      <caseQnty>1000</caseQnty>
+      <varQnty>114</varQnty>
+    </dimensns>
+    <dataChck></dataChck>
+    <dataMsng></dataMsng>
+    <verStmt>
+      <version></version>
+    </verStmt>
+  </fileTxt>
+  <notes></notes>
+</fileDscr>
+<dataDscr>
+<var ID="V1" name="economy" files="F1" intrvl="discrete">
+  <varFormat type="character"/>
+  <location width="10"/>
+  <labl>Economy</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+</var>
+<var ID="V2" name="economycode" files="F1" intrvl="discrete">
+  <varFormat type="character"/>
+  <location width="3"/>
+  <labl>Economy Code</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <notes>International Standards Organization (ISO) 3-digit alphabetic code for each economy</notes>
+</var>
+<var ID="V3" name="wpid_random" files="F1" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Gallup World Poll identifier</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">111189981</sumStat>
+  <sumStat type="max">210987093</sumStat>
+  <notes>Individual-level identifier to merge with Gallup World Poll data</notes>
+</var>
+<var ID="V4" name="wgt" files="F1" dcml="15" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="17"/>
+  <labl>Weight</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.367678193428723</sumStat>
+  <sumStat type="max">2.5156656379758</sumStat>
+  <notes>Weight assigned to each observation</notes>
+</var>
+<var ID="V5" name="female" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Respondent is female</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>female</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>male</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V6" name="age" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="2"/>
+  <labl>Respondent age</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">15</sumStat>
+  <sumStat type="max">90</sumStat>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>36</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>37</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>38</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>39</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>40</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>41</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>42</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>43</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>44</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>45</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>46</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>47</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>48</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>49</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>50</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>51</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>52</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>53</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>54</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>55</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>56</labl>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+    <labl>57</labl>
+  </catgry>
+  <catgry>
+    <catValu>58</catValu>
+    <labl>58</labl>
+  </catgry>
+  <catgry>
+    <catValu>59</catValu>
+    <labl>59</labl>
+  </catgry>
+  <catgry>
+    <catValu>60</catValu>
+    <labl>60</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>61</labl>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+    <labl>62</labl>
+  </catgry>
+  <catgry>
+    <catValu>63</catValu>
+    <labl>63</labl>
+  </catgry>
+  <catgry>
+    <catValu>64</catValu>
+    <labl>64</labl>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+    <labl>65</labl>
+  </catgry>
+  <catgry>
+    <catValu>66</catValu>
+    <labl>66</labl>
+  </catgry>
+  <catgry>
+    <catValu>67</catValu>
+    <labl>67</labl>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+    <labl>68</labl>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+    <labl>69</labl>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+    <labl>70</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>71</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>72</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>73</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>74</labl>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+    <labl>75</labl>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+    <labl>76</labl>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+    <labl>77</labl>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+    <labl>78</labl>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+    <labl>79</labl>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+    <labl>80</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>81</labl>
+  </catgry>
+  <catgry>
+    <catValu>82</catValu>
+    <labl>82</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>83</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>84</labl>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+    <labl>85</labl>
+  </catgry>
+  <catgry>
+    <catValu>86</catValu>
+    <labl>86</labl>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+    <labl>87</labl>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+    <labl>88</labl>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+    <labl>89</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>90</labl>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+    <labl>91</labl>
+  </catgry>
+  <catgry>
+    <catValu>92</catValu>
+    <labl>92</labl>
+  </catgry>
+  <catgry>
+    <catValu>93</catValu>
+    <labl>93</labl>
+  </catgry>
+  <catgry>
+    <catValu>94</catValu>
+    <labl>94</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>95</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>96</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>97</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>98</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>99+</labl>
+  </catgry>
+</var>
+<var ID="V7" name="educ" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Respondent education level</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">4</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>completed primary school or less</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>completed secondary school</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>completed tertiary education or more</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(dk)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(rf)</labl>
+  </catgry>
+</var>
+<var ID="V8" name="inc_q" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Within-economy household income quintile</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Poorest 20%</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Second 20%</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Middle 20%</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Fourth 20%</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Richest 20%</labl>
+  </catgry>
+  <notes>Respondent’s within-economy household income quintile (1 to 5)</notes>
+</var>
+<var ID="V9" name="emp_in" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Respondent is in workforce</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>in the workforce</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>out of the workforce</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V10" name="urbanicity_f2f" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Respondent lives in rural area</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Rural</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Urban</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <notes>Rural and urban classifications rely on a joint OECD-EU effort to classify these two groups based on population grids (not administrative units) that directly capture the spatial concentration of people. This is different from Gallup’s earlier measures of rurality which relied on a survey respondent’s perception of the urbanicity of their residence. The Global Findex Database 2021 uses the new estimate and provides account ownership averages for adults living in rural and urban areas. These averages are available only for those economies in which face-to-face surveys were conducted and are not compared with the 2011, 2014, and 2017 data, nor with regional or global averages.
+
+See more here - https://ghsl.jrc.ec.europa.eu/degurba.php</notes>
+</var>
+<var ID="V11" name="account" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Has an account</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min"/>
+  <sumStat type="max">1</sumStat>
+  <catgry>
+    <labl>no</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V12" name="account_fin" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Has an account at a financial institution</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min"/>
+  <sumStat type="max">1</sumStat>
+  <catgry>
+    <labl>no</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <notes>The data also include an additional 3 percent of respondents in 2021 who reported receiving wages, government transfers, a public sector pension, or payments for agricultural products into an account (excluding mobile money) in the past year; paying utility bills or school fees from a financial institution account in the past year; or receiving wages, government transfers, or agricultural payments to a card in the past year. The definition does not include non-bank financial institutions such as pension funds, retirement accounts, insurance companies, or equity holdings such as stocks.  Questions screened for account ownership in the questionnaire do not include these additional 3 percent of respondents.</notes>
+</var>
+<var ID="V13" name="account_mob" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Has a mobile money account</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min"/>
+  <sumStat type="max">1</sumStat>
+  <catgry>
+    <labl>no</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <notes>Mobile money service providers are those included in the GSM Association’s Mobile Money for the Unbanked (GSMA MMU) database.
+The data also includes an additional 2 percent of respondents in 2021 who received wages, government transfers, a public sector pension, or payments for agricultural products through a mobile phone in the past year. Unlike the definition of account at a financial institution, the definition of mobile money account does not include the payment of utility bills or school fees through a mobile phone. The reason is that the phrasing of the possible answers leaves it open as to whether those payments were made using a mobile money account or an over-the-counter service. Questions screened for account ownership in the questionnaire do not include these additional 2 percent of respondents.</notes>
+</var>
+<var ID="V14" name="fin1_1a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Opened first account to receive a wage payment</labl>
+  <sumStat type="vald">257</sumStat>
+  <sumStat type="invd">743</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts).</notes>
+</var>
+<var ID="V15" name="fin1_1b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Opened first account to receive money from the government</labl>
+  <sumStat type="vald">257</sumStat>
+  <sumStat type="invd">743</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts).</notes>
+</var>
+<var ID="V16" name="fin2" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Has a debit card</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts).</notes>
+</var>
+<var ID="V17" name="fin4" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Used a debit card</labl>
+  <sumStat type="vald">47</sumStat>
+  <sumStat type="invd">953</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts) that have an ATM/debit card.</notes>
+</var>
+<var ID="V18" name="fin4a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Used a debit card in-store</labl>
+  <sumStat type="vald">6</sumStat>
+  <sumStat type="invd">994</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts) that used an ATM/debit card.</notes>
+</var>
+<var ID="V19" name="fin5" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Used a mobile phone or internet to access account</labl>
+  <sumStat type="vald">260</sumStat>
+  <sumStat type="invd">740</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts).</notes>
+</var>
+<var ID="V20" name="fin6" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Used a mobile phone or internet to check account balance</labl>
+  <sumStat type="vald">260</sumStat>
+  <sumStat type="invd">740</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts).</notes>
+</var>
+<var ID="V21" name="fin7" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Has a credit card</labl>
+  <sumStat type="vald">260</sumStat>
+  <sumStat type="invd">740</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts).</notes>
+</var>
+<var ID="V22" name="fin8" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Used a credit card</labl>
+  <sumStat type="vald">7</sumStat>
+  <sumStat type="invd">993</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts) who have a credit card.</notes>
+</var>
+<var ID="V23" name="fin8a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Used a credit card in-store</labl>
+  <sumStat type="vald">3</sumStat>
+  <sumStat type="invd">997</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts) who used a credit card.</notes>
+</var>
+<var ID="V24" name="fin8b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid credit card balances in full</labl>
+  <sumStat type="vald">7</sumStat>
+  <sumStat type="invd">993</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts) who have a credit card.</notes>
+</var>
+<var ID="V25" name="fin9" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Made any deposit into the account</labl>
+  <sumStat type="vald">260</sumStat>
+  <sumStat type="invd">740</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts). This includes cash or electronic deposits, or any time money is put into their account(s) by themselves, by an employer, or another person or institution.</notes>
+</var>
+<var ID="V26" name="fin9a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Make deposits into the account two or more times per month</labl>
+  <sumStat type="vald">94</sumStat>
+  <sumStat type="invd">906</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts).</notes>
+</var>
+<var ID="V27" name="fin10" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Withdrew from the account</labl>
+  <sumStat type="vald">260</sumStat>
+  <sumStat type="invd">740</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">4</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts). This includes cash withdrawals made in person using a debit card or mobile phone, electronic payments or purchases, checks, or any other sanctioned circumstance in which money is removed from the account(s) either by the account owner or by another person or institution.</notes>
+</var>
+<var ID="V28" name="fin10a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Withdrew from the account two or more times per month</labl>
+  <sumStat type="vald">107</sumStat>
+  <sumStat type="invd">893</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <notes>Asked only of account owners (excluding mobile money accounts).</notes>
+</var>
+<var ID="V29" name="fin10b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Used account to store money</labl>
+  <sumStat type="vald">260</sumStat>
+  <sumStat type="invd">740</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V30" name="fin11_1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Unbanked: use account without help</labl>
+  <sumStat type="vald">471</sumStat>
+  <sumStat type="invd">529</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V31" name="fin11a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Reason for no account: too far</labl>
+  <sumStat type="vald">740</sumStat>
+  <sumStat type="invd">260</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V32" name="fin11b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Reason for no account: too expensive</labl>
+  <sumStat type="vald">740</sumStat>
+  <sumStat type="invd">260</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V33" name="fin11c" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Reason for no account: lack documentation</labl>
+  <sumStat type="vald">740</sumStat>
+  <sumStat type="invd">260</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V34" name="fin11d" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Reason for no account: lack trust</labl>
+  <sumStat type="vald">740</sumStat>
+  <sumStat type="invd">260</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V35" name="fin11e" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Reason for no account: religious reasons</labl>
+  <sumStat type="vald">740</sumStat>
+  <sumStat type="invd">260</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V36" name="fin11f" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Reason for no account: lack money</labl>
+  <sumStat type="vald">740</sumStat>
+  <sumStat type="invd">260</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V37" name="fin11g" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Reason for no account: family member already has one</labl>
+  <sumStat type="vald">740</sumStat>
+  <sumStat type="invd">260</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V38" name="fin11h" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Reason for no account: no need for financial services</labl>
+  <sumStat type="vald">740</sumStat>
+  <sumStat type="invd">260</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V39" name="fin13a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Use mobile money account two or more times a month</labl>
+  <sumStat type="vald">224</sumStat>
+  <sumStat type="invd">776</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V40" name="fin13b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Use mobile money account to store money</labl>
+  <sumStat type="vald">224</sumStat>
+  <sumStat type="invd">776</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V41" name="fin13c" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Use mobile money account to borrow money</labl>
+  <sumStat type="vald">224</sumStat>
+  <sumStat type="invd">776</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V42" name="fin13d" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Use mobile money account without help</labl>
+  <sumStat type="vald">236</sumStat>
+  <sumStat type="invd">764</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V43" name="fin14_1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Use mobile phone to pay for a purchase in-store</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V44" name="fin14_2" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid digitally for an in-store purchase for the first time after COVID-19</labl>
+  <sumStat type="vald">26</sumStat>
+  <sumStat type="invd">974</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Only used cash</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Used other methods, such as a card or mobile phone</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V45" name="fin14_2_China" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid digitally for an in-store purchase for the first time since 2020</labl>
+  <sumStat type="vald"/>
+  <sumStat type="invd">1000</sumStat>
+  <sumStat type="min">*</sumStat>
+  <sumStat type="max">*</sumStat>
+</var>
+<var ID="V46" name="fin14a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Made bill payments online using the Internet</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V47" name="fin14a1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Send money to a relative or friend online using the Internet</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V48" name="fin14b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Bought something online using the Internet</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V49" name="fin14c" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid online or in cash at delivery</labl>
+  <sumStat type="vald">24</sumStat>
+  <sumStat type="invd">976</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Pay online</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>In cash</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(both)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(dk)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V50" name="fin14c_2" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid online for an online purchase for the first time after COVID-19</labl>
+  <sumStat type="vald">24</sumStat>
+  <sumStat type="invd">976</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Only paid in cash</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Paid online</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V51" name="fin14c_2_China" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid online for an online purchase for the first time since 2020</labl>
+  <sumStat type="vald"/>
+  <sumStat type="invd">1000</sumStat>
+  <sumStat type="min">*</sumStat>
+  <sumStat type="max">*</sumStat>
+</var>
+<var ID="V52" name="fin16" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Saved for old age</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V53" name="fin17a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Saved using an account at a financial institution</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V54" name="fin17a1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Saved using a mobile money account</labl>
+  <sumStat type="vald">313</sumStat>
+  <sumStat type="invd">687</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V55" name="fin17b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Saved using an informal savings club</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V56" name="fin20" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Borrowed for medical purposes</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V57" name="fin22a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Borrowed from a financial institution</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V58" name="fin22b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Borrowed from family or friends</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V59" name="fin22c" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Borrowed from an informal savings club</labl>
+  <sumStat type="vald">89</sumStat>
+  <sumStat type="invd">911</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V60" name="fin24" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Main source of emergency funds in 30 days</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">8</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Main source: Savings</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Main source: Family or friends</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Main source: Money from working</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Main source: Borrowing from a bank, empoyer, or private lender</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Main source: Selling assets</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Main source: Some other source</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>(I could not come up with the money)</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>(dk)</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>ref</labl>
+  </catgry>
+</var>
+<var ID="V61" name="fin24a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Difficulty of emergency funds in 30 days</labl>
+  <sumStat type="vald">866</sumStat>
+  <sumStat type="invd">134</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">4</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Very difficult</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Somewhat difficult</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Not difficult at all</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(DK)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V62" name="fin24b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Difficulty of emergency funds in 7 days</labl>
+  <sumStat type="vald">866</sumStat>
+  <sumStat type="invd">134</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Very difficult</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Somewhat difficult</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Not difficult at all</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(I could not come up with the money)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(DK)</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V63" name="fin26" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Sent domestic remittances</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V64" name="fin27_1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Sent domestic remittances through an account</labl>
+  <sumStat type="vald">152</sumStat>
+  <sumStat type="invd">848</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V65" name="fin27c1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Sent domestic remittances in cash</labl>
+  <sumStat type="vald">18</sumStat>
+  <sumStat type="invd">982</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V66" name="fin27c2" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Sent domestic remittances through an MTO</labl>
+  <sumStat type="vald">18</sumStat>
+  <sumStat type="invd">982</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V67" name="fin28" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received domestic remittances</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V68" name="fin29_1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received domestic remittances through an account</labl>
+  <sumStat type="vald">274</sumStat>
+  <sumStat type="invd">726</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V69" name="fin29c1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received domestic remittances in cash</labl>
+  <sumStat type="vald">12</sumStat>
+  <sumStat type="invd">988</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V70" name="fin29c2" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received domestic remittances through an MTO</labl>
+  <sumStat type="vald">12</sumStat>
+  <sumStat type="invd">988</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V71" name="fin30" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid a utility bill</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V72" name="fin31a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid a utility bill using an account</labl>
+  <sumStat type="vald">365</sumStat>
+  <sumStat type="invd">635</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V73" name="fin31b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid a utility bill using a mobile phone</labl>
+  <sumStat type="vald">365</sumStat>
+  <sumStat type="invd">635</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V74" name="fin31b1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid a utility bill from an account or mobile phone for the first time after the</labl>
+  <sumStat type="vald">250</sumStat>
+  <sumStat type="invd">750</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">4</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Only used cash</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Used other methods, such as a card or mobile phone</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V75" name="fin31b1_China" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid a utility bill from an account or mobile phone for the first time since 202</labl>
+  <sumStat type="vald"/>
+  <sumStat type="invd">1000</sumStat>
+  <sumStat type="min">*</sumStat>
+  <sumStat type="max">*</sumStat>
+</var>
+<var ID="V76" name="fin31c" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid a utility bill in cash</labl>
+  <sumStat type="vald">115</sumStat>
+  <sumStat type="invd">885</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V77" name="fin32" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received wage payments</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V78" name="fin33" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received public sector wage payments</labl>
+  <sumStat type="vald">172</sumStat>
+  <sumStat type="invd">828</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V79" name="fin34a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received wage payments into an account</labl>
+  <sumStat type="vald">172</sumStat>
+  <sumStat type="invd">828</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V80" name="fin34b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received wage payments to a mobile phone</labl>
+  <sumStat type="vald">172</sumStat>
+  <sumStat type="invd">828</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V81" name="fin34d" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received wage payments in cash</labl>
+  <sumStat type="vald">132</sumStat>
+  <sumStat type="invd">868</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V82" name="fin34e" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received wage payments to a card</labl>
+  <sumStat type="vald">9</sumStat>
+  <sumStat type="invd">991</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V83" name="fin35" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received wage payments into an account or to a phone or a card and paid higher t</labl>
+  <sumStat type="vald">41</sumStat>
+  <sumStat type="invd">959</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V84" name="fin37" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a government transfer</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V85" name="fin38" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a government pension</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V86" name="fin39a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a government transfer or pension into an account</labl>
+  <sumStat type="vald">121</sumStat>
+  <sumStat type="invd">879</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V87" name="fin39b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a government transfer or pension to a mobile phone</labl>
+  <sumStat type="vald">121</sumStat>
+  <sumStat type="invd">879</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V88" name="fin39d" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a government transfer or pension in cash</labl>
+  <sumStat type="vald">33</sumStat>
+  <sumStat type="invd">967</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V89" name="fin39e" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a government transfer or pension to a card</labl>
+  <sumStat type="vald">9</sumStat>
+  <sumStat type="invd">991</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V90" name="fin42" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received an agricultural payment</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V91" name="fin42a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Grow own crops or raise livestock</labl>
+  <sumStat type="vald">163</sumStat>
+  <sumStat type="invd">837</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(Both)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(dk)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V92" name="fin43a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received an agricultural payment into an account</labl>
+  <sumStat type="vald">163</sumStat>
+  <sumStat type="invd">837</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V93" name="fin43b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received an agricultural payment to a mobile phone</labl>
+  <sumStat type="vald">163</sumStat>
+  <sumStat type="invd">837</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V94" name="fin43d" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received an agricultural payment in cash</labl>
+  <sumStat type="vald">159</sumStat>
+  <sumStat type="invd">841</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V95" name="fin43e" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received an agricultural payment to a card</labl>
+  <sumStat type="vald">10</sumStat>
+  <sumStat type="invd">990</sumStat>
+  <sumStat type="min">2</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V96" name="fin44a" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Financially worried: old age</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Very worried</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Somewhat worried</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Not worried at all</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(Does not apply)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(DK)</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+</var>
+<var ID="V97" name="fin44b" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Financially worried: medical cost</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Very worried</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Somewhat worried</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Not worried at all</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(Does not apply)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(DK)</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+</var>
+<var ID="V98" name="fin44c" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Financially worried: bills</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Very worried</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Somewhat worried</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Not worried at all</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(Does not apply)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(DK)</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+</var>
+<var ID="V99" name="fin44d" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Financially worried: education</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Very worried</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Somewhat worried</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Not worried at all</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(Does not apply)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(DK)</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+</var>
+<var ID="V100" name="fin45" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Financially most worried</labl>
+  <sumStat type="vald">900</sumStat>
+  <sumStat type="invd">100</sumStat>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">6</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Old age</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Medical cost</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Bills</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Education</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(DK)</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+</var>
+<var ID="V101" name="fin45_1" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Financially worried due to COVID-19</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">4</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Very worried</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Somewhat worried</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Not worried at all</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(DK)</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>(ref)</labl>
+  </catgry>
+</var>
+<var ID="V102" name="fin45_1_China" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Financial worry</labl>
+  <sumStat type="vald"/>
+  <sumStat type="invd">1000</sumStat>
+  <sumStat type="min">*</sumStat>
+  <sumStat type="max">*</sumStat>
+</var>
+<var ID="V103" name="saved" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Saved in the past year</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min"/>
+  <sumStat type="max">1</sumStat>
+  <catgry>
+    <labl>no</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V104" name="borrowed" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Borrowed in the past year</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min"/>
+  <sumStat type="max">1</sumStat>
+  <catgry>
+    <labl>no</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V105" name="receive_wages" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a wage payment</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>received payments into an account</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>received payments in cash only</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>received payments using other methods</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>did not receive payments</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>dk/ref</labl>
+  </catgry>
+  <notes>This includes adults who received a wage payment in the past year.</notes>
+</var>
+<var ID="V106" name="receive_transfers" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a government transfer payment</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">4</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>received payments into an account</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>received payments in cash only</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>received payments using other methods</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>did not receive payments</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>dk/ref</labl>
+  </catgry>
+  <notes>This includes adults who received a government transfer payment in the past year.</notes>
+</var>
+<var ID="V107" name="receive_pension" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a government pension payment</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>received payments into an account</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>received payments in cash only</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>received payments using other methods</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>did not receive payments</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>dk/ref</labl>
+  </catgry>
+</var>
+<var ID="V108" name="receive_agriculture" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Received a payment for the sale of agricultural goods</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">4</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>received payments into an account</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>received payments in cash only</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>received payments using other methods</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>did not receive payments</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>dk/ref</labl>
+  </catgry>
+  <notes>This includes adults who received a payment for the sale of agricultural goods in the past year.</notes>
+</var>
+<var ID="V109" name="pay_utilities" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Paid a utility bill</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>made payments from an account</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>made payments in cash only</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>made payments using other methods</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>did not make payments</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>dk/ref</labl>
+  </catgry>
+  <notes>This includes adults who paid a utility bill in the past year.</notes>
+</var>
+<var ID="V110" name="remittances" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Made or received a domestic remittance payment</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">6</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>sent/received through an account</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>sent/received through an otc transaction</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>sent/received in cash only</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>sent/received using other methods</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>did not send/receive</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>dk/ref</labl>
+  </catgry>
+  <notes>This includes adults who made or received a domestic remittance payment in the past year.</notes>
+</var>
+<var ID="V111" name="mobileowner" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Owns a mobile phone</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V112" name="internetaccess" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Internet access</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1</sumStat>
+  <sumStat type="max">3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>no</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>(dk)</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>(ref)</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V113" name="anydigpayment" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Made or received a digital payment</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min"/>
+  <sumStat type="max">1</sumStat>
+  <catgry>
+    <labl>no</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V114" name="merchantpay_dig" files="F1" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="1"/>
+  <labl>Made a digital merchant payment</labl>
+  <sumStat type="vald">1000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min"/>
+  <sumStat type="max">1</sumStat>
+  <catgry>
+    <labl>no</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+</dataDscr></codeBook>

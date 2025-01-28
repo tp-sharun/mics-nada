@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook version="2.5" ID="BGD_2006_MICS_v01_M" xml-lang="en" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 https://ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+<docDscr>
+  <citation>
+    <titlStmt>
+      <IDNo>DDI_BGD_2006_MICS_v01_M</IDNo>
+      <titl></titl>
+    </titlStmt>
+    <prodStmt>
+      <producer abbr="" affiliation="Blancroft Research International" role="Producer of generic MICS example">Croft, Trevor</producer>
+      <producer abbr="" affiliation="UNICEF" role="Customisation of generic for Bangladesh archive">James, Rhiannon</producer>
+      <prodDate date="2008-02-07">2008-02-07</prodDate>
+      <software version="v5">NADA</software>
+    </prodStmt>
+    <verStmt>
+      <version>Bangladesh MICS 2006 v0.1
+Slightly edited version of UNICEF's DDI ref. DDI-BGD-UNICEF-MICS2005/1.0-v0.6</version>
+    </verStmt>
+  </citation>
+</docDscr>
+<stdyDscr>
+  <citation>
+    <titlStmt>
+      <titl>Multiple Indicator Cluster Survey 2006</titl>
+      <subTitl>Road to Progress</subTitl>
+      <altTitl>MICS3 2006</altTitl>
+      <parTitl/>
+      <IDNo>BGD_2006_MICS_v01_M</IDNo>
+    </titlStmt>
+    <rspStmt>
+      <AuthEnty affiliation="">Bangladesh Bureau of Statistics</AuthEnty>
+    </rspStmt>
+    <prodStmt>
+      <producer abbr="" affiliation="UNICEF" role="Technical assistance">UNICEF, Bangladesh Country Office</producer>
+      <producer abbr="" affiliation="UNICEF" role="International technical assistance">Strategic Information Section, Division of Policy and Planning, UNICEF NYHQ</producer>
+      <copyright/>
+      <software version="beta" date="2024-05-07">MetadataEditor</software>
+      <prodDate/>
+      <prodPlac/>
+    </prodStmt>
+    <distStmt>
+      <contact affiliation="Bangladesh Bureau of Statistics" URI="http://www.bbs.gov.bd/" email="salamstat@yahoo.com">Mr. Md. Shamsul Alam</contact>
+      <contact affiliation="UNICEF" URI="www.unicef.org/bangladesh/ " email="dimusa@unicef.org">Deqa Ibrahim Musa</contact>
+      <contact affiliation="UNICEF" URI="www.childinfo.org" email="ahancioglu@unicef.org">Hancioglu, Attila</contact>
+      <depDate date=""/>
+      <distDate date=""/>
+    </distStmt>
+    <serStmt>
+      <serName>Multiple Indicator Cluster Survey - Round 3 [hh/mics-3]</serName>
+      <serInfo><![CDATA[The Multiple Indicator Cluster Survey, Round 3 (MICS3) is the third round of MICS surveys, previously conducted around 1995 (MICS1) and 2000 (MICS2). Many questions and indicators are consistent and compatible with the prior round of MICS (MICS2) but less so with MICS1, although there have been a number of changes in definition of indicators between rounds. Details can be found by reviewing the indicator definitions.]]></serInfo>
+    </serStmt>
+    <verStmt>
+      <version date="2007-11-19">Version 1.0: Edited data used for final report</version>
+      <verResp/>
+      <notes><![CDATA[]]></notes>
+    </verStmt>
+    <biblCit format=""><![CDATA[]]></biblCit>
+    <notes><![CDATA[]]></notes>
+  </citation>
+  <studyAuthorization date="">
+    <authorizationStatement><![CDATA[]]></authorizationStatement>
+  </studyAuthorization>
+  <stdyInfo>
+    <studyBudget><![CDATA[]]></studyBudget>
+    <subject>
+      <topcClas vocab="MICS Topics" vocabURI="">Household members</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Education</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Water and sanitation</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Household characteristics</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Child labour</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Salt iodization</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Women's background</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Tetanus toxoid</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Maternal and newborn health</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Marriage and union</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">HIV/AIDS</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Children's background</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Birth registration</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Early learning</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Vitamin A</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Breastfeeding</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Care of illness</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Immunization</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Support to children orphaned and made vulnerable by HIV/AIDS</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Child discipline</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Source and cost of supplies</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Attitudes towards domestic violence</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Child development</topcClas>
+      <topcClas vocab="MICS Topics" vocabURI="">Disability</topcClas>
+    </subject>
+    <abstract><![CDATA[The Multiple Indicator Cluster Survey (MICS) is a household survey programme developed by UNICEF to assist countries in filling data gaps for monitoring human development in general and the situation of children and women in particular. MICS is capable of producing statistically sound, internationally comparable estimates of social indicators. The current round of MICS is focused on providing a monitoring tool for the Millennium Development Goals (MDGs), the World Fit for Children (WFFC), as well as for other major international commitments, such as the United Nations General Assembly Special Session (UNGASS) on HIV/AIDS and the Abuja targets for malaria. 
+
+Survey Objectives 
+The 2006 Bangladesh Multiple Indicator Cluster Survey has the following objectives: 
+- To provide up-to-date information for assessing the situation of children and women in Bangladesh; 
+- To furnish data needed for monitoring progress toward goals established by the Millennium Development Goals, the goals of A World Fit For Children (WFFC), and other internationally agreed upon goals, as a basis for future action; 
+- To contribute to the improvement of data and monitoring systems in Bangladesh and to strengthen technical expertise in the design, implementation, and analysis of such systems. 
+
+Survey Content 
+MICS questionnaires are designed in a modular fashion that can be easily customized to the needs of a country. They consist of a household questionnaire, a questionnaire for women aged 15-49 and a questionnaire for children under the age of five (to be administered to the mother or caretaker). Other than a set of core modules, countries can select which modules they want to include in each questionnaire. 
+
+Survey Implementation 
+The survey was implemented by the Bangladesh Bureau of Statistics , with the support and assistance of UNICEF and other partners. Technical assistance and training for the surveys is provided through a series of regional workshops, covering questionnaire content, sampling and survey implementation; data processing; data quality and data analysis; report writing and dissemination.]]></abstract>
+    <sumDscr>
+      <collDate date="2006-06-20" event="start" cycle=""/>
+      <collDate date="2006-10-08" event="end" cycle=""/>
+      <nation abbr="BGD">Bangladesh</nation>
+      <geogCover>The survey is nationally representative and covers the whole of Bangladesh.</geogCover>
+      <geogCoverNote/>
+      <geogUnit/>
+      <anlyUnit><![CDATA[Households (defined as a group of persons who usually live and eat together) 
+
+De jure household members (defined as memers of the household who usually live in the household, which may include people who did not sleep in the household the previous night, but does not include visitors who slept in the household the previous night but do not usually live in the household) 
+
+Women aged 15-49 
+
+Children aged 0-4]]></anlyUnit>
+      <universe><![CDATA[The survey covered all de jure household members (usual residents), all women aged 15-49 years resident in the household, and all children aged 0-4 years (under age 5) resident in the household.]]></universe>
+      <dataKind>Sample survey data [ssd]</dataKind>
+    </sumDscr>
+    <qualityStatement>
+      <standardsCompliance>
+        <standard>
+          <standardName/>
+          <producer/>
+        </standard>
+        <complianceDescription/>
+      </standardsCompliance>
+      <otherQualityStatement/>
+    </qualityStatement>
+    <notes><![CDATA[The Bangladesh Multiple Indicator Cluster Survey included the following modules in the questionnaires: 
+
+HOUSEHOLD QUESTIONNAIRE : Household characteristics, household listing, orphaned and vulnerable children, education, child labour, water and sanitation, child discipline, child disability and salt iodization. 
+
+WOMEN&#039;S QUESTIONNAIRE: Women&#039;s characteristics, tetanus toxoid, maternal and newborn health, marriage, and HIV/AIDS knowledge and domestic violence. 
+
+CHILDREN&#039;S QUESTIONNAIRE: Children&#039;s characteristics, birth registration and early learning, child development, vitamin A, breastfeeding, care of illness, source and cost fo supplies for oral rehydation therapy and immunization.]]></notes>
+    <exPostEvaluation completionDate="" type="">
+      <evaluationProcess/>
+      <outcomes/>
+    </exPostEvaluation>
+  </stdyInfo>
+  <method>
+    <dataColl>
+      <timeMeth/>
+      <dataCollector abbr="BBS" role="" affiliation="">Bangladesh Bureau of Statistics</dataCollector>
+      <collectorTraining type=""/>
+      <frequenc/>
+      <sampProc><![CDATA[The primary objective of the sample design for the Bangladesh Multiple Indicator Cluster Survey was to produce statistically reliable estimates of most indicators, at the national level, for urban and rural areas, and for the six divisions of the country, municipal areas, city corporation&#039;s slum areas of two big cities and tribal areas. Rural areas, municipal areas, city corporation areas, slum areas and tribal areas were defined as the sampling domain. 
+
+A multi-stage, stratified cluster sampling approach was used for the selection of the survey sample. 
+
+Sample Size and Sample Allocation 
+The target sample size for the Bangladesh MICS was calculated as 68247 households. For the calculation of the sample size, the key indicator used was the DPT immunization (3+doses) prevalence among children aged 12-23 months. The following formula was used to estimate the required sample size for these indicators: 
+n = [ 4 (r) (1-r) (f) (1.1) ] [ (0.12r)2 (p) (nh) ] 
+
+where 
+n is the required sample size, expressed as number of households 
+4 is a factor to achieve the 95 per cent level of confidence 
+r is the predicted or anticipated prevalence (coverage rate) of the indicator 
+1.1 is the factor necessary to raise the sample size by 10 per cent for non-response 
+f is the shortened symbol for deff (design effect) 
+0.12r is the margin of error to be tolerated at the 95 per cent level of confidence, defined as 12 per cent of r (relative sampling error of r) 
+p is the proportion of the total population upon which the indicator, r, is based 
+nh is the average household size. 
+
+For the calculation, r (DPT immunization 3+doses prevalence) was assumed to be 39.7 percent in the Rangamati districts. The value of deff (design effect) was taken as 1.5 based on estimates from previous surveys, p (percentage of children aged 12-23 months in the total population) was taken as 2.3 percent, and nh (average household size) was taken as 4.9 households. 
+
+For the sub national level, the margin of error should be high which was also acknowledged in the MICS manual. Therefore, for sub national estimates the margin of error need to be relaxed considerably. If a rate of 30% of r is used this would give a margin of error ± 0.06 for prevalence rates of 0.20, ± 0.12 for prevalence rates of 0.40, and so on. Considering this phenomenon, in case of Rangamati 30% of r has been used. 
+
+The resulting number of households from this exercise was about 900 households which is the sample size needed in each district - thus yielding about 68250 in total. The average cluster size in the Bangladesh MICS was determined as 35 households, based on a number of considerations, including the budget available, and the time that would be needed per team to complete one cluster. Dividing the total number of households by the number of households per cluster, it was calculated that the selection of a total number of 26 clusters would be needed in each district. 
+
+Equal allocation of the total sample size to the 75 domains was targeted. Therefore, 26 clusters were allocated to each district with the final sample size calculated at 68250 households (1950 cluster X 35 households per cluster). In each stratum, the clusters (primary sampling units) were distributed to rural, municipal, city corporations, slum and tribal areas on PPS method. 
+
+Sampling Frame and Selection of Clusters
+The 2001 census frame was used for the selection of clusters. Census enumeration areas were defined as primary sampling units (PSUs), and were selected from each of the sampling domains by using systematic pps (probability proportional to size) sampling procedures, based on the estimated sizes of the enumeration areas from the 2001 Population Census. The first stage of sampling was thus completed by selecting the required number of enumeration areas from each of the 5 strata namely rural, municipal, city corporations, slum and tribal areas. 
+
+Listing Activities 
+Since the sample frame of the 2001 Population Census was not up to date, household lists in all selected enumeration areas were updated prior to the selection of households. For this purpose, listing teams were formed, who visited each enumeration area, and listed the occupied households. The BBS officials working in the upazila were responsible for the listing of all households in the respective PSUs. 
+
+Selection of Households 
+Lists of households were prepared by the Upazila officials of BBS. The households were sequentially numbered from 1 to 100 (or more) households in each enumeration area at the where selection of 35 households in each enumeration area was carried out using systematic selection procedures. 
+
+(Information extracted from the final report: BBS and UNICEF. 2007. Bangladesh Multiple Indicator Cluster Survey 2006, Final Report. Dhaka, Bangladesh: BBS and UNICEF)]]></sampProc>
+      <sampleFrame>
+        <sampleFrameName/>
+        <custodian/>
+        <universe/>
+        <frameUnit isPrimary="">
+          <unitType numberOfUnits=""/>
+        </frameUnit>
+        <updateProcedure/>
+      </sampleFrame>
+      <deviat>No major deviations from the original sample design were made. All sample enumeration areas were accessed and successfully interviewed with good response rates.</deviat>
+      <collMode>Face-to-face [f2f]</collMode>
+      <resInstru><![CDATA[The questionnaires of MICS 2006 are based on the global format of MICS3 model questionnaire. From the MICS3 model English version, the questionnaires were translated into Bangla and were pre-tested in four sample areas of which two were in rural areas, one in City Corporation and one in the slum area during May 2006. Based on the results of the pre-test, modifications were made to the wording and translation of the questionnaires. 
+
+The questionnaire for under-five children was administered to mothers or caretakers of under-five children living in the households. Normally, the questionnaire was administered to mothers of under-five children; in cases when the mother was not listed in the household roster, a primary caretaker for the child was identified and interviewed.]]></resInstru>
+      <instrumentDevelopment type=""/>
+      <collSitu><![CDATA[The data were collected by 32 teams; each comprised of four interviewers and a supervisor. There was one quality control officer for every two teams of enumerators: two female &amp; two male.]]></collSitu>
+      <actMin><![CDATA[]]></actMin>
+      <ConOps><![CDATA[]]></ConOps>
+      <weight><![CDATA[Sample weights were calculated for each of the datafiles. 
+
+Sample weights for the household data were computed as the inverse of the probability of selection of the household, computed at the sampling domain level (urban/rural within each region). The household weights were adjusted for non-response at the domain level, and were then normalized by a constant factor so that the total weighted number of households equals the total unweighted number of households. The household weight variable is called HHWEIGHT and is used with the HH data and the HL data. 
+
+Sample weights for the women&#039;s data used the un-normalized household weights, adjusted for non-response for the women&#039;s questionnaire, and were then normalized by a constant factor so that the total weighted number of women&#039;s cases equals the total unweighted number of women&#039;s cases. 
+
+Sample weights for the children&#039;s data followed the same approach as the women&#039;s and used the un-normalized household weights, adjusted for non-response for the children&#039;s questionnaire, and were then normalized by a constant factor so that the total weighted number of children&#039;s cases equals the total unweighted number of children&#039;s cases.]]></weight>
+      <cleanOps><![CDATA[Data editing took place at a number of stages throughout the processing (see Other processing), including: 
+a) Office editing and coding 
+b) During data entry 
+c) Structure checking and completeness 
+d) Secondary editing 
+e) Structural checking of SPSS data files 
+
+Detailed documentation of the editing of data can be found in the data processing guidelines]]></cleanOps>
+    </dataColl>
+    <notes><![CDATA[]]></notes>
+    <anlyInfo>
+      <respRate><![CDATA[Of the 68,247 of households selected for the sample, 67,540 were found to be occupied. Of these, 62,463 households were successfully interviewed for a household response rate of 92.5 percent. In the interviewed households, 78,260 of eligible women (age 15-49) were identified. Of these, 69,860 of women were successfully interviewed, yielding a response rate of 89.3 percent. In addition, 34,710 of children under 5 were listed in HH questionnaire. Of these, questionnaires were completed for 31,566 under-five children which correspond to a response rate of 90.9 percent. Overall response rates of 82.6 were for women&#039;s questionnaire and 84.1 for under-5 questionnaire.]]></respRate>
+      <EstSmpErr><![CDATA[Estimates from a sample survey are affected by two types of errors: 1) non-sampling errors and 2) sampling errors. Non-sampling errors are the results of mistakes made in the implementation of data collection and data processing. Numerous efforts were made during implementation of the 2005-2006 MICS to minimize this type of error, however, non-sampling errors are impossible to avoid and difficult to evaluate statistically. 
+
+Sampling errors can be evaluated statistically. The sample of respondents to the 2005-2006 MICS is only one of many possible samples that could have been selected from the same population, using the same design and expected size. Each of these samples would yield results that differe somewhat from the results of the actual sample selected. Sampling errors are a measure of the variability in the results of the survey between all possible samples, and, although, the degree of variability is not known exactly, it can be estimated from the survey results. The sampling erros are measured in terms of the standard error for a particular statistic (mean or percentage), which is the square root of the variance. Confidence intervals are calculated for each statistic within which the true value for the population can be assumed to fall. Plus or minus two standard errors of the statistic is used for key statistics presented in MICS, equivalent to a 95 percent confidence interval. 
+
+If the sample of respondents had been a simple random sample, it would have been possible to use straightforward formulae for calculating sampling errors. However, the 2005-2006 MICS sample is the result of a multi-stage stratified design, and consequently needs to use more complex formulae. The SPSS complex samples module has been used to calculate sampling errors for the 2005-2006 MICS. This module uses the Taylor linearization method of variance estimation for survey estimates that are means or proportions. This method is documented in the SPSS file CSDescriptives.pdf found under the Help, Algorithms options in SPSS. 
+
+Sampling errors have been calculated for a select set of statistics (all of which are proportions due to the limitations of the Taylor linearization method) for the national sample, urban and rural areas, and for each of the five regions. For each statistic, the estimate, its standard error, the coefficient of variation (or relative error -- the ratio between the standard error and the estimate), the design effect, and the square root design effect (DEFT -- the ratio between the standard error using the given sample design and the standard error that would result if a simple random sample had been used), as well as the 95 percent confidence intervals (+/-2 standard errors). 
+
+Details of the sampling errors are presented in the sampling errors appendix to the report and in the sampling errors table presented in the external resources.]]></EstSmpErr>
+      <dataAppr><![CDATA[A series of data quality tables and graphs are available to review the quality of the data and include the following: 
+Age distribution of the household population 
+Age distribution of eligible women and interviewed women 
+Age distribution of eligible children and children for whom the mother or caretaker was interviewed 
+Age distribution of children under age 5 by 3 month groups 
+Age and period ratios at boundaries of eligibility 
+Percent of observations with missing information on selected variables 
+Presence of mother inthe household and person interviewed for the under 5 questionnaire 
+School attendance by single year age 
+Sex ratio at birth among children ever born, surviving and dead by age of respondent 
+Distribution of women by time since last birth 
+Scatterplot of weight by height, weight by age and height by age 
+Graph of male and female population by single years of age 
+Population pyramid 
+
+The results of each of these data quality tables is shown in the appendix of the final report and is also given in the external resources section. 
+
+The general rule for presentation of missing data in the final report tabulations is that a column is presented for missing data if the percentage of cases with missing data is 1% or more. Cases with missing data on the background characteristics (e.g. education) are included in the tables, but the missing data rows are suppressed and noted at the bottom of the tables in the report (not in the SPSS output, however).]]></dataAppr>
+    </anlyInfo>
+    <stdyClas><![CDATA[]]></stdyClas>
+    <dataProcessing type="jj">uj</dataProcessing>
+  </method>
+  <dataAccs>
+    <setAvail>
+      <accsPlac URI=""/>
+      <origArch/>
+      <avlStatus/>
+      <collSize/>
+      <complete/>
+      <fileQnty/>
+      <notes><![CDATA[]]></notes>
+    </setAvail>
+    <useStmt>
+      <confDec required="yes" formNo="" URI="">Users of the data agree to keep confidential all data contained in these datasets and to make no attempt to identify, trace or contact any individual whose data is included in these datasets.</confDec>
+      <restrctn/>
+      <citReq><![CDATA[Bangladesh Bureau of Statistics, Bangladesh. Multiple Indicator Cluster Survey: Household , household listing, women and children&#039;s files, 2006 [Computer file]. Dhaka, Bangladesh: Bangladesh Bureau of Statistics [producer], 2006. Dhaka, Bangaldesh: Bangladesh Bureau of Statistics and New York: Strategic Information Section, Dvision of Policy and Planning, UNICEF [distributors], 2006.]]></citReq>
+      <deposReq><![CDATA[]]></deposReq>
+      <conditions><![CDATA[Survey datasets are distributed at no cost for legitimate research, with the condition that we receive a description of any research project that will be using the data prior to authorizing their distribution. Copies of all reports and publications based on the requested data must be sent to the Bangladesh Bureau of Statistics and UNICEF. 
+
+Bangladesh Bureau of Statistics: 
+Mr. Md. Shamsul Alam 
+Project Director 
+Monitoring the Situation of Children and Women 
+Bangladesh Bureau of Statistics 
+Planning Division 
+Ministry of Planning 
+Parishankhyan Bhaban 
+E-27/A, Agargoan 
+Sher-e-Bangla Nagar 
+Dhaka, 1207 
+Bangladesh 
+Email: salamstat@yahoo.com 
+
+UNICEF Bangladesh: 
+dhaka@unicef.org 
+
+Requests for access to the datasets may be made through the website www.childinfo.org.]]></conditions>
+      <disclaimer><![CDATA[The Bangladesh Bureau of Statistics and UNICEF provide these data to external users without any warranty or responsibility implied. The Bangladesh Bureau of Statistics and UNICEF accept no responsibility for the results and/or implications of any actions resulting from the use of these data.]]></disclaimer>
+    </useStmt>
+    <notes><![CDATA[]]></notes>
+  </dataAccs>
+  <notes><![CDATA[]]></notes>
+</stdyDscr>
+<dataDscr>
+</dataDscr></codeBook>
