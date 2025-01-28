@@ -35,9 +35,10 @@
     $image_view=isset($search_options->image_view) ? $search_options->image_view :'';
 ?>
 
-<div class="row mb-3">
-    <div class="col-12 col-md-12 mt-2 mt-md-0 ">
-        <div class="filter-action-bar row">
+<div class="row">
+    <div class="col-12 col-md-12">
+        <div class="filter-action-bar ">
+
                 <?php if($found>0):?>
                 <?php 
                 /* <div class="search-count mt-1 font-weight-bold col">
@@ -45,7 +46,7 @@
                 </div>
                 */ ?>
 
-                <div class="search-count col-md-5 text-md-left mb-2 mb-md-0 pt-2">
+                <div class="search-count paragraph-style-1 ">
                     <?php echo sprintf(t('showing_studies'),
                         number_format(($surveys['limit']*$current_page)-$surveys['limit']+1),
                         number_format(($surveys['limit']*($current_page-1))+ count($surveys['rows'])),
@@ -55,17 +56,17 @@
 
                 <?php if ($this->config->item("catalog_variable_view")!==FALSE):?>
                     <?php if($show_variable_toggle && (isset($surveys['search_counts_by_type']) && array_key_exists('survey',$surveys['search_counts_by_type']))):?>
-                    <div class="col mt-1 wb-search-toggle">               
-                        <div class="btn-group btn-group-toggle study-view-toggle" >
-                            <button type="button" class="btn btn-sm btn-outline-primary rounded-left active toggle_view" data-value="s" ><?php echo t('Study view');?></button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary rounded-right toggle_view" data-value="v"><a href="<?php echo site_url('catalog/'.@$active_repo['repositoryid'].'?'.$variable_view);?>"><?php echo t('Variable view');?></a></button>
+                    <div class=" wb-search-toggle">               
+                        <div class="btn-group btn-group-toggle study-view-toggle tab-menu" >
+                            <button type="button" class="active tab-item toggle_view" data-value="s" ><?php echo t('Study view');?></button>
+                            <button type="button" class="  tab-item toggle_view" data-value="v"><a href="<?php echo site_url('catalog/'.@$active_repo['repositoryid'].'?'.$variable_view);?>"><?php echo t('Variable view');?></a></button>
                         </div>
                     </div>
                     <?php endif;?>
                 <?php endif;?>
 
                 <?php if ($tab_type=='image'):?>
-                    <div class="col mt-1 wb-search-image">                        
+                    <div class="col-md-3 wb-search-image">                        
                         <div class="btn-group btn-group-toggle image-view-toggle" >
                             
                             <button type="button" class="btn btn-sm btn-outline-primary <?php echo $image_view!=='thumbnail' ? 'active' :'';?> rounded-left toggle_view" >
@@ -85,7 +86,7 @@
                     </div>
                 <?php endif;?>
 
-                <div class="col mt-1 wb-search-sort">
+                <div class="wb-search-sort">
                     <div class="form-inline float-right ">
                         <label for="sort-by-select" class="sort-by-label">
                             <span class="sort-by-title d-none d-sm-block"></span>
@@ -108,15 +109,16 @@
                 <?php endif;?>
         </div>
 
-    </div>    
+  
 </div>
-
+</div>
 <div class="active-filters-container">
     <?php $active_filters=$this->load->view("search/active_filter_tokens",null,true);?>    
     <?php if (!empty(trim($active_filters))):?>
         <div class="active-filters">
+          <span class="selected-filter">Selected filters</span>
             <?php echo $active_filters;?>
-            <a href="<?php echo site_url('catalog');?>?tab_type=<?php echo $search_options->tab_type; ?>" class="btn-reset-search btn btn-outline-danger btn-sm"><?php echo t('reset_search');?></a>
+            <a href="<?php echo site_url('catalog');?>?tab_type=<?php echo $search_options->tab_type; ?>" class="outlined-btn"><?php echo t('RESET');?></a>
         </div>        
     <?php endif;?>
 </div>    

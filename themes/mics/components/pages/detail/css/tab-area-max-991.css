@@ -1,0 +1,3 @@
+.row:has(.detail-left-panel) {
+  --space-bw: 40px;
+}

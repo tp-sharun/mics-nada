@@ -28,7 +28,9 @@ $config['external_resources']['dctypes'] = array(
     "vid"=>"Video",
     "aud"=>"Audio",
     "web"=>"Web Site",
-    "final"=>"Final"    
+    "final"=>"Final" ,
+    "repro" => "reproducible",
+    "doc/fnl" => "Final" 
 );
 
 
@@ -45,7 +47,53 @@ $config['external_resources']['dctype_groups']= array(
     ),
     'reproducible'=>array(
         'repro'
-    )  
-);
+    ),
+    'key Findings'=>array(
+        'doc/kfd'
+    ),
+    'Snapshot'=>array(
+        'doc/snp'
+    ),
+    'Biomarker'=>array(
+        'doc/bio'
+    ),
+    'Executive summary'=>array(
+        'doc/exs'
+    ),
+    'Final'=>array(
+        'doc/fnl'
+    ),
+    'Infographic'=>array(
+        'doc/inf'
+    ),
+    'Key indicators'=>array(
+        'doc/kid'
+    ),
+    'Preliminary'=>array(
+        'doc/pre'
+    ),
+    'Preliminary report'=>array(
+        'doc/pret'
+    ),
+    'Snapshots and tables'=>array(
+        'doc/snt'
+    ),
+    'Summary'=>array(
+        'doc/sum'
+    ),
+    'Survey findings'=>array(
+        'doc/srf'
+    )    
+); 
 
 ?>
+	
+	
+	
+	
+	
+	
+	
+
+	
+	

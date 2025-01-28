@@ -1,0 +1,14 @@
+.study-info {
+  --info-width-center: 490px;
+  --info-space: 20px;
+  flex-wrap: wrap;
+}
+
+.left-thumbnail img {
+  width: auto;
+}
+
+.left-thumbnail {
+  width: 100%;
+  margin-bottom: 20px;
+}

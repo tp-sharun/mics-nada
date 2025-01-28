@@ -63,11 +63,11 @@ $facet_groups=(array)array_unique(array_filter(array_column($items,'group_name')
     <div class="sidebar-filter-index selected-items-count" data-toggle="tooltip" data-placement="top" title="Tooltip for Help"><?php echo $filter_total;?></div>
     <?php endif;?>
 
-    <div id="facet-<?php echo $filter_id;?>" class="sidebar-filter-entries <?php echo $filter_collapse ? 'collapse' :'';?> <?php echo $filter_id;?>-container items-container">        
+    <div id="facet-<?php echo $filter_id;?>" data-parent="#filter-parent" class="sidebar-filter-entries <?php echo $filter_collapse ? 'collapse' :'';?> <?php echo $filter_id;?>-container items-container">        
         <?php if (count($items)>15):?>
         <div class="wb-card-header">       
             <div class="wb-search-control input-group input-group-sm mb-3">
-                <input type="text" class="form-control facet-filter-values" placeholder="Filter...">
+                <input type="text" class="facet-filter-values" placeholder="Filter...">
                 <div class="input-group-append">
                     <button class="btn btn-link facet-filter-values-clear" type="button" style="display:none;">
                         <i class="fas fa-times"></i>
@@ -76,7 +76,7 @@ $facet_groups=(array)array_unique(array_filter(array_column($items,'group_name')
             </div>
         </div> 
         <?php endif;?>
-        <div class="items-container <?php //echo (count($repositories)>10) ? 'scrollable' : ''; ?>">
+        <div class="scroll-style facet-checkbox-list items-container <?php //echo (count($repositories)>10) ? 'scrollable' : ''; ?>">
             <?php if($items):?>
 
                 <?php //default items with no groups/sections ?>

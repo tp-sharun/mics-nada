@@ -1,0 +1,35 @@
+body {
+  font-family: var(--primary-font);
+  color: var(--regular-gray1);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* [id] {
+  scroll-margin-top: var(--header-height);
+}
+
+*/

@@ -19,7 +19,7 @@
     
 	$sub_title=implode(", ", $sub_title);
 ?>
-<div class="row study-info">
+<div class="study-info">
 	<?php if ($survey['owner_repo']['thumbnail']!='' || ( isset($survey['thumbnail']) && trim($survey['thumbnail'])!='')):?>
 		<?php 
 			$thumbnail=$survey['owner_repo']['thumbnail'];
@@ -27,30 +27,30 @@
 				$thumbnail='files/thumbnails/'.$survey['thumbnail'];
 			}
 		?>
-		<div class="col-md-2">
+		<div class="left-thumbnail">
 			<div class="collection-thumb-container">
 				<a href="<?php echo site_url('catalog/'.$survey['owner_repo']['repositoryid']);?>">
-				<img  src="<?php echo base_url().$thumbnail;?>?v=<?php echo $survey['changed']; ?>" class="mr-3 img-fluid img-thumbnail" alt="<?php echo $survey['owner_repo']['repositoryid'];?>" title="<?php echo $survey['owner_repo']['title'];?>"/>
+				<img  src="<?php echo base_url().$thumbnail;?>?v=<?php echo $survey['changed']; ?>" class="img-fluid img-thumbnail" alt="<?php echo $survey['owner_repo']['repositoryid'];?>" title="<?php echo $survey['owner_repo']['title'];?>"/>
 				</a>
 			</div>		
 		</div>
 	<?php endif;?>
 
-	<div class="col">
+	<div class="middle-content">
 		
 		<div>
-		    <h1 class="mt-0 mb-1" id="dataset-title">
+		    <h1 class="heading-style-2 text-bold detail-title" id="dataset-title">
                 <span><?php echo $survey_title;?></span>
                 <?php if (isset($survey['subtitle'])):?>
-                    <div class="study-subtitle"><?php echo $survey['subtitle'];?></div>
+                    <div class="study-subtitle detail-subtitle  heading-style-4 text-bold"><?php echo $survey['subtitle'];?></div>
                 <?php endif;?>
             </h1>
-            <div class="clearfix">
-		        <h6 class="sub-title float-left" id="dataset-sub-title"><?php echo $sub_title;?></h6>
+            <div class="clearfix info-item">
+		        <h6 class="info-label heading-style-5" id="dataset-sub-title"><?php echo $sub_title;?></h6>
                 <?php if(isset($data_access_type) && $data_access_type!='data_na' && $survey['type']=='survey'):?>
                 <a  
                     href="<?php echo site_url("catalog/$sid/get-microdata");?>" 
-                    class="get-microdata-btn badge badge-primary wb-text-link-uppercase float-left ml-3" 
+                    class="get-microdata-btn badge badge-primary wb-text-link-uppercase float-left get-micto-btn" 
                     title="<?php echo t('get_microdata');?>">					
                     <span class="fa fa-download"></span>
                     <?php echo t('get_microdata');?>
@@ -66,7 +66,7 @@
 
                 <a  
                     href="<?php echo $reproducibility_package['_links']['download'];?>" 
-                    class="get-microdata-btn badge badge-primary wb-text-link-uppercase float-left ml-3" 
+                    class="get-microdata-btn badge badge-primary wb-text-link-uppercase float-left get-micto-btn" 
                     target="_blank"
                     title="<?php echo t('get_reproducibility_package');?>">                    
                     <span class="<?php echo $link_type_class;?>"></span>
@@ -77,28 +77,28 @@
             </div>
 		</div>
 
-		<div class="row study-info-content">
+		<div class=" study-info-content">
 		
-            <div class="col pr-5">
+            <div class="info-item-wrap">
 
-                <div class="row mt-4 mb-2 pb-2  border-bottom">
-                    <div class="col-md-2">
+                <div class="info-item">
+                    <div class="info-label heading-style-5">
                         <?php echo t('refno');?>
                     </div>
-                    <div class="col">
-                        <div class="study-idno">
+                    <div class="info-value">
+                        <div class="study-idno paragraph-style-1 ">
                             <?php echo $survey['idno'];?>                            
                         </div>
                     </div>
                 </div>
 
                 <?php if (isset($survey['doi']) && !empty($survey['doi'])):?>
-                <div class="row mb-2 pb-2  border-bottom">
-                    <div class="col-md-2">
+                <div class="info-item">
+                    <div class="info-label heading-style-5">
                         <?php echo t('DOI');?>
                     </div>
-                    <div class="col">
-                        <div class="study-doi">
+                    <div class="info-value">
+                        <div class="study-doi paragraph-style-1 ">
                             <?php if (strtolower(substr($survey['doi'],0,4))=='http'):?>
                                 <a target="_blank" href="<?php echo html_escape($survey['doi']);?>"><?php echo $survey['doi'];?></a>
                             <?php else:?>                                
@@ -110,12 +110,12 @@
                 <?php endif;?>
 		
                 <?php if ($survey['type']!='document' && isset($survey['authoring_entity']) && !empty($survey['authoring_entity'])):?>
-                <div class="row mb-2 pb-2  border-bottom">
-                    <div class="col-md-2">
+                <div class="info-item">
+                    <div class="info-label heading-style-5">
                         <?php echo t('producers');?>
                     </div>
-                    <div class="col">
-                        <div class="producers">
+                    <div class="info-value">
+                        <div class="producers paragraph-style-1 ">
                             <?php echo $survey['authoring_entity'];?>
                         </div>
                     </div>
@@ -123,11 +123,11 @@
                 <?php endif;?>
                 
                 <?php if ($survey['type']=='document' && isset($survey['metadata']['document_description']['abstract']) ):?>
-                <div class="row mb-2 pb-2  border-bottom">
-                    <div class="col-md-2">
+                <div class="info-item">
+                    <div class="info-label heading-style-5">
                         <?php echo t('abstract');?>
                     </div>
-                    <div class="col">
+                    <div class="info-value">
                         <div class="abstract" id="study-abstract">
                             <?php echo ($survey['metadata']['document_description']['abstract']);?>
                         </div>
@@ -136,11 +136,11 @@
                 <?php endif;?>
 
                 <?php if (isset($survey['repositories']) && is_array($survey['repositories']) && count($survey['repositories'])>0): ?> 
-                <div class="row  border-bottom mb-2 pb-2 mt-2">
-                    <div class="col-md-2">
+                <div class="info-item">
+                    <div class="info-label heading-style-5">
                         <?php echo t('collections');?>
                     </div>
-                    <div class="col">
+                    <div class="info-value">
                         <div class="collections link-col">           
                             <?php foreach($survey['repositories'] as $repository):?>
                                 <span class="collection">
@@ -154,14 +154,14 @@
                 </div>
                 <?php endif;?>
 
-                <div class="row border-bottom mb-2 pb-2 mt-2">
-                    <div class="col-md-2">
+                <div class="info-item">
+                    <div class="info-label heading-style-5">
                         <?php echo t('metadata');?>
                     </div>
-                    <div class="col">
+                    <div class="info-value">
                         <div class="metadata">
                             <!--metadata-->
-                            <span class="mr-2 link-col">
+                            <span class="metadata-link-wrap">
                                 <?php $report_file=unix_path($survey['storage_path'].'/ddi-documentation-'.$this->config->item("language").'-'.$survey['id'].'.pdf');?>
                                 <?php if (file_exists($report_file)):?>
                                     <a class="download" href="<?php echo site_url('catalog/'.$survey['id'].'/pdf-documentation');?>" title="<?php echo t('documentation_in_pdf');?>" >
@@ -185,11 +185,11 @@
                 </div>
 
                 <?php if($survey['link_study']!='' || $survey['link_indicator']!=''): ?>
-                <div class="row mb-2 pb-2 mt-2">
-                    <div class="col-md-2">
+                <div class="info-item">
+                    <div class="info-label heading-style-5">
                         
                     </div>
-                    <div class="col">
+                    <div class="info-value">
                         <div class="study-links link-col">
                             <?php if($survey['link_study']!=''): ?>						
                                 <a  target="_blank" href="<?php echo html_escape($survey['link_study']);?>" title="<?php echo t('link_study_website_hover');?>">
@@ -246,30 +246,30 @@
 
 	</div>
 
-    <div class="col-md-2 border-left">
+    <div class="right-study-info">
 		<!--right-->
 		<div class="study-header-right-bar">
 				<div class="stat">
-					<div class="stat-label"><?php echo t('created_on');?> </div>
-					<div class="stat-value"><?php echo date("M d, Y",$survey['created']);?></div>
+					<div class="stat-label heading-style-5"><?php echo t('created_on');?> </div>
+					<div class="stat-value paragraph-style-1"><?php echo date("M d, Y",$survey['created']);?></div>
 				</div>
 
 				<div class="stat">
-					<div class="stat-label"><?php echo t('last_modified');?> </div>
-					<div class="stat-value"><?php echo date("M d, Y",$survey['changed']);?></div>
+					<div class="stat-label heading-style-5"><?php echo t('last_modified');?> </div>
+					<div class="stat-value paragraph-style-1"><?php echo date("M d, Y",$survey['changed']);?></div>
 				</div>
 				
 				<?php if ((int)$survey['total_views']>0):?>
 					<div class="stat">
-						<div class="stat-label"><?php echo t('page_views');?> </div>
-						<div class="stat-value"><?php echo $survey['total_views'];?></div>
+						<div class="stat-label heading-style-5"><?php echo t('page_views');?> </div>
+						<div class="stat-value paragraph-style-1"><?php echo $survey['total_views'];?></div>
 					</div>
 				<?php endif;?>
 
 				<?php if ((int)$survey['total_downloads']>0):?>
 					<div class="stat">
-						<div class="stat-label"><?php echo t('downloads');?> </div>
-						<div class="stat-value"><?php echo $survey['total_downloads'];?></div>
+						<div class="stat-label heading-style-5"><?php echo t('downloads');?> </div>
+						<div class="stat-value paragraph-style-1"><?php echo $survey['total_downloads'];?></div>
 					</div>				
 				<?php endif;?>
 		</div>		

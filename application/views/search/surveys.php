@@ -27,7 +27,7 @@
 <?php //$this->load->view("search/active_filter_tokens");?>
 
 
-<hr/>
+
 
 <?php		
 	//citations
@@ -192,7 +192,7 @@ if (isset($featured_studies) && is_array($featured_studies) ){
         $collection_links=implode(" <span class=\"coll-sep\">|</span> ",$collection_links);
     ?>
 
-    <div class="survey-row border-bottom pb-3 mb-2 <?php echo ($is_featured == true ? 'xwb-featured xfeatured-study': '');?>" data-url="<?php echo site_url('catalog/'.$row['id']); ?>" >
+    <div class="survey-row listing-item <?php echo ($is_featured == true ? 'xwb-featured xfeatured-study': '');?>" data-url="<?php echo site_url('catalog/'.$row['id']); ?>" >
         
         <?php if ($is_featured): ?>
                     <?php $row['form_model']=$row['model'];?>
@@ -203,20 +203,27 @@ if (isset($featured_studies) && is_array($featured_studies) ){
                     </div>      
         <?php endif; ?>
         <div class="row">            
-            <div class="<?php echo $row_col2_class;?>">                
-                <h5 class="wb-card-title title">
-                    <a href="<?php echo site_url('catalog/'.$row['id']); ?>"  title="<?php echo $row['title']; ?>" class="d-flex" >   
+        
+          <div class="<?php echo $row_col2_class;?>">      
+          <div class="d-flex flex-row ">          
+          <div class="study-type-icon">
                         <i class="fa <?php echo $type_icons[$row['type']];?> fa-nada-icon wb-title-icon"></i>             
+                        </div>
+                <div class="flex-grow-1">
+                <h5 class="wb-card-title title heading-style-5 listing-title">
+                    <a href="<?php echo site_url('catalog/'.$row['id']); ?>"  title="<?php echo $row['title']; ?>" class="d-flex" >   
+                      
                         <span>
                             <?php echo $row['title'];?>
-                            <?php if(isset($row['subtitle'])):?>
-                                <div class="study-subtitle"><?php echo $row['subtitle'];?></div>
-                            <?php endif;?>
+                          
                         </span>
                     </a>
+                    <?php if(isset($row['subtitle'])):?>
+                                <div class="study-subtitles paragraph-style-1"><?php echo $row['subtitle'];?></div>
+                            <?php endif;?>
                 </h5>
                 
-                <div class="study-country">
+                <div class="study-country paragraph-style-1 listing-deatil">
                     <?php if (isset($row['nation']) && $row['nation']!=''):?>
                             <?php echo $row['nation']. ',';?>
                     <?php endif;?>
@@ -228,7 +235,7 @@ if (isset($featured_studies) && is_array($featured_studies) ){
                     ?>
                     <?php echo $survey_year!=0 ? $survey_year : '';?>                
                 </div>
-                <div class="sub-title">
+                <div class="sub-title paragraph-style-3 listing-deatil listing-deatil-2">
                     <?php if (isset($row['authoring_entity'])):?>
                     <div>
                         <span class="study-by"><?php echo $row['authoring_entity'];?></span>
@@ -252,18 +259,18 @@ if (isset($featured_studies) && is_array($featured_studies) ){
                         </span>
                     <?php endif;?>
                 </div>
-                <div class="survey-stats">
-                <span class="study-idno">
+                <div class="survey-details paragraph-style-4 row">
+                <span class="study-idno col-sm-4">
                         <span class="wb-label"><?php echo t('ID')?>:</span> <span class="text-dark wb-value"><?php echo $row['idno'];?></span>
                     </span>
 
                     <?php /*<span><?php echo t('created_on');?>: <?php echo date('M d, Y',$row['created']);?></span> */ ?>
-                    <span><span class="wb-label"><?php echo t('last_modified');?>:</span> <span class="wb-value"><?php echo date('M d, Y',$row['changed']);?></span></span>
+                    <span class="col-sm-4 last-modified"><span class="wb-label"><?php echo t('last_modified');?>:</span> <span class="wb-value"><?php echo date('M d, Y',$row['changed']);?></span></span>
                     <?php if ((int)$row['total_views']>0):?>
-                        <span><span class="wb-label"><?php echo t('views');?>:</span> <span class="wb-value"><?php echo (int)$row['total_views'];?></span></span>
+                        <span class="col-sm-4  views-item"><span class="wb-label"><?php echo t('views');?>:</span> <span class="wb-value"><?php echo (int)$row['total_views'];?></span></span>
                     <?php endif;?>
                     <?php if(isset($row['rank_'])):?>
-                        <span> <span class="wb-label">Score:</span> <span class="wb-value"><?php echo round($row['rank_'],2);?></span></span>
+                        <span class="col-sm-4  views-item"> <span class="wb-label">Score:</span> <span class="wb-value"><?php echo round($row['rank_'],2);?></span></span>
                     <?php endif;?>
 
                     
@@ -271,7 +278,7 @@ if (isset($featured_studies) && is_array($featured_studies) ){
                     <span><?php echo t('downloads');?>: <?php echo (int)$row['total_downloads'];?></span>
                     <?php */?>
                     <?php if (array_key_exists($row['id'],$surveys['citations'])): ?>
-                        <span>
+                        <span class="col-sm-4">
                             <span class="wb-label"><?php echo t('citations');?>:</span> <a title="<?php echo t('related_citations');?>" href="<?php echo site_url('catalog/'.$row['id'].'/related_citations');?>"><?php echo $surveys['citations'][$row['id']];?></a>
                         </span>                    
                     <?php endif;?>
@@ -343,23 +350,24 @@ if (isset($featured_studies) && is_array($featured_studies) ){
                 <?php endif;?>
 
             <?php endif;?>
-
-
+            </div>
+            </div>
         </div>
     </div> <!-- /.    row -->
 
 <?php endforeach;?>
 </div>
-    <div class="nada-pagination border-top-none">
+
+<div class="nada-pagination border-top-none">
         <div class="row mt-3 mb-3 d-flex align-items-lg-center">
 
-            <div class="col-12 col-md-3 col-lg-4 text-center text-md-left mb-2 mb-md-0">
-                <?php echo sprintf(t('showing_studies'),
-                    number_format(($surveys['limit']*$current_page)-$surveys['limit']+1),
-                    number_format(($surveys['limit']*($current_page-1))+ $survey_rows_count),
-                    number_format($surveys['found']));
+        <!-- <div class="col-12 col-md-3 col-lg-4 text-center text-md-left mb-2 mb-md-0"> -->
+                <?php //echo sprintf(t('showing_studies'),
+                    // number_format(($surveys['limit']*$current_page)-$surveys['limit']+1),
+                    // number_format(($surveys['limit']*($current_page-1))+ $survey_rows_count),
+                    // number_format($surveys['found']));
                 ?>
-            </div>
+            <!-- </div> -->
 
             <div class="col-12 col-md-9 col-lg-8 d-flex justify-content-center justify-content-lg-end text-center">
                 <nav aria-label="Page navigation">
@@ -378,14 +386,18 @@ if (isset($featured_studies) && is_array($featured_studies) ){
     </div>
 
     <!-- set per page items size-->
-    <div id="items-per-page" class="items-per-page light switch-page-size">
-        <small>
+    <div id="items-per-page" class="items-per-page light switch-page-size paragraph-style-3">
+  
+                    <div class="item-per-page-label">
             <?php echo t('select_number_of_records_per_page');?>:
+                  </div>
+                  <div class="item-per-page-wrap">
             <span class="nada-btn change-page-size" data-value="15">15</span>
             <span class="nada-btn change-page-size" data-value="30">30</span>
             <span class="nada-btn change-page-size" data-value="50">50</span>
             <span class="nada-btn change-page-size" data-value="100">100</span>
-        </small>
+            </div>
+     
     </div>
 
     <!-- TODO: Enable the tooltips in this page. Move it in a common place -->

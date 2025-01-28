@@ -66,7 +66,7 @@
 
 <div class="row">
 
-    <div class="col-sm-2 col-md-2 col-lg-2 tab-sidebar hidden-sm-down sidebar-files">       
+    <div class="col-sm-2 col-md-2 col-lg-2 tab-sidebar hidden-sm-down sidebar-files detail-left-panel">       
 
         <form method="get" action="<?php echo site_url('catalog/'.$sid.'/search');?>" class="dictionary-search">
         <div class="input-group input-group-sm">            
@@ -95,7 +95,7 @@
 
     </div>
 
-    <div class="col-sm-10 col-md-10 col-lg-10 wb-border-left tab-body body-files">
+    <div class="col-sm-10 col-md-10 col-lg-10 wb-border-left tab-body body-files detail-right-panel">
         
         <div class="variable-metadata">
             <?php echo $content;?>

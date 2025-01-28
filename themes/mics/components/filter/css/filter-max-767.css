@@ -1,0 +1,7 @@
+.switch-page-size {
+  flex-direction: column;
+}
+
+.item-per-page-label {
+  margin-bottom: 8px;
+}

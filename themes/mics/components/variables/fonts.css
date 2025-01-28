@@ -1,0 +1,19 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --primary-regular: 400;
+  --primary-medium: 500;
+  --primary-bold: 700;
+  --primary-black: 900;
+  --secondary-font: 'PT Serif', serif;
+  --secondary-regular: 400;
+  --secondary-bold: 800;
+  /*sizes*/
+  --font-size42: 2.625rem;
+  --font-size34: 2.125rem;
+  --font-size30: 1.875rem;
+  --font-size24: 1.5rem;
+  --font-size22: 1.375rem;
+  --font-size19: 1.188rem;
+  --font-size14: 0.875rem;
+  --font-size12: 0.75rem;
+}

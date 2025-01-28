@@ -31,6 +31,8 @@ class Catalog extends MY_Controller {
 		$this->load->model('Form_model');
 		$this->load->model('Data_classification_model');
 		$this->load->model('Facet_model');
+		$this->load->model('stats_model');
+
 
 		//load facets configurations
 		$this->load->config("facets");

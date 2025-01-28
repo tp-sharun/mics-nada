@@ -1,0 +1,8 @@
+.nada-pagination {
+  margin-top: 19px;
+}
+
+.nada-pagination .page-link {
+  color: var(--primary-color);
+  border-color: var(--regular-gray5);
+}

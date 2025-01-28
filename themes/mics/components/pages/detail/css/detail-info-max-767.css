@@ -1,0 +1,18 @@
+.study-info {
+  flex-direction: column;
+  --info-width: 100%;
+  --info-space: 0;
+  --info-width-center: 100%;
+}
+
+.right-study-info {
+  border: none;
+}
+
+.middle-content {
+  padding: 25px 0;
+}
+
+.left-thumbnail {
+  margin-bottom: 0;
+}

@@ -1,0 +1,4 @@
+.sticky-top {
+  top: calc(var(--header-height) + 20px);
+  z-index: 2;
+}

@@ -32,22 +32,22 @@ if (isset($years['min_year']) && isset($years['max_year'])){
         </div>
     </h6> 
 
-    <div id="facet-<?php echo $filter_id;?>" class="sidebar-filter-entries <?php echo $filter_collapse ? 'collapse' :'';?>">        
+    <div id="facet-<?php echo $filter_id;?>" data-parent="#filter-parent" class="year-filter sidebar-filter-entries <?php echo $filter_collapse ? 'collapse' :'';?>">        
         <form>
-            <div class="row">
-            <div class="col">
-                <p class="mb-0 pb-0"><?php echo t('from');?></p>
+           
+                <div class="year-item">
+                <p class="paragraph-style-2"><?php echo t('from');?></p>
                 <div class="form-group mb-0">
                     <?php echo form_dropdown('from', $years_dropdown, ((isset($search_options->from) && $search_options->from!='') ? $search_options->from : current($years_dropdown)), 'id="from"  class="form-control"'); ?>
                 </div>
-            </div>
-            <div class="col">
-                <p class="mb-0 pb-0"><?php echo t('to');?></p>
-                <div class="form-group">
+                </div>
+                <div class="year-item">
+                <p class="paragraph-style-2"><?php echo t('to');?></p>
+                <div class="form-group mb-0">
                     <?php echo form_dropdown('to', $years_dropdown, (isset($search_options->to) && $search_options->to!='') ? $search_options->to: '','id="to" class="form-control"'); ?>
                 </div>
-            </div>
-            </div>
+                </div>
+          
         </form>
     </div>
 

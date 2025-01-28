@@ -87,7 +87,7 @@ $config['supported_languages']=array();//array("english","french","arabic","russ
 /**
  * Use template translations
  */
-$config['use_template_translation']=false;
+$config['use_template_translation']=true;
 
 /*
 |--------------------------------------------------------------------------

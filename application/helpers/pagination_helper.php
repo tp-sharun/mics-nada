@@ -76,7 +76,7 @@ if ( ! function_exists('pager'))
 
         $pager='<ul class="pagination pagination-md custom-pager">';
         $pager.=implode('',$output);
-        $pager.=' </ul>';
+        $pager.=' </ul>'; 
         return $pager;
     }
 }

@@ -76,9 +76,9 @@
     <div class="variable-list-container variable-search">
             <div class="table-hover grid-table variable-list">
                 
-                <div><?php echo anchor('catalog/compare',t('compare'), array('class'=>'btn-compare-var','title'=>t('compare_selected_variables'),'target'=>'_blank'));?></div>
+                <div class="compare-btn-wrap"><?php echo anchor('catalog/compare',t('compare'), array('class'=>'btn-style-4 btn-compare-var','title'=>t('compare_selected_variables'),'target'=>'_blank'));?></div>
 
-                <div class="variables-container border-top">
+                <div class="">
                 <?php foreach($variables['rows'] as $row):?>
                     <?php
                     $compare='';
@@ -90,13 +90,14 @@
                     $var_country_info=array_filter(array($row['nation'], $row['idno']));
                     $var_country_info=implode(" - ", $var_country_info);
                     ?>
-                    <div class="row vrow pb-2 mb-2 border-bottom" valign="top" data-url="<?php echo site_url('catalog/'.$row['sid'].'/variable/'.$row['vid']); ?>" data-url-target="_blank" data-title="<?php echo $row['labl'];?>" title="<?php echo t('variable_info');?>">
-                        <div class="col-md-1" title="<?php echo t('mark_for_variable_comparison');?>">
+                    <div class="listing-item" valign="top" data-url="<?php echo site_url('catalog/'.$row['sid'].'/variable/'.$row['vid']); ?>" data-url-target="_blank" data-title="<?php echo $row['labl'];?>" title="<?php echo t('variable_info');?>">
+                      <div class="d-flex flex-row">    
+                    <div class="study-type-icon" title="<?php echo t('mark_for_variable_comparison');?>">
                             <input type="checkbox" class="nada-form-check-input compare" value="<?php echo $row['sid'].'/'
                                 .$row['vid']
                             ?>" <?php echo $compare; ?>/>
                         </div>
-						<div class="col">
+						<div class="">
                             <?php $title=array_unique(array_filter(array($row['name'],$row['labl'])));?>
                             <?php $title=implode(" - ", $title);?>
                             <div class="title font-weight-bold">
@@ -111,6 +112,7 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                 <?php endforeach;?>
 
                 </div>
@@ -121,13 +123,7 @@
 </div>
     <div class="nada-pagination border-top-none">
         <div class="row mt-3 mb-3 d-flex align-items-lg-center">
-            <div class="col-12 col-md-5 col-lg-5 text-center text-md-left mb-2 mb-md-0">
-                <?php echo sprintf(t('showing_variables'),
-                    number_format(($variables['limit']*$current_page)-$variables['limit']+1),
-                    number_format(($variables['limit']*($current_page-1))+ count($variables['rows'])),
-                    number_format($variables['found']));
-                ?>
-            </div>
+            
 
             <div class="col-12 col-md-8 col-lg-7 d-flex justify-content-center justify-content-lg-end text-center">
                 <nav aria-label="Page navigation">
@@ -146,12 +142,14 @@
     </div>
 
     <!-- set per page items size-->
-    <div id="items-per-page" class="items-per-page light switch-page-size">
-        <small>
-            <?php echo t('select_number_of_records_per_page');?>:
-            <span class="nada-btn change-page-size" data-value="15">15</span>
-            <span class="nada-btn change-page-size" data-value="30">30</span>
-            <span class="nada-btn change-page-size" data-value="50">50</span>
-            <span class="nada-btn change-page-size" data-value="100">100</span>
-        </small>
+    <div id="items-per-page" class="items-per-page light switch-page-size paragraph-style-3">
+             <div class="item-per-page-label">       
+              <?php echo t('select_number_of_records_per_page');?>:
+             </div>
+             <div class="item-per-page-wrap">
+              <span class="nada-btn change-page-size" data-value="15">15</span>
+              <span class="nada-btn change-page-size" data-value="30">30</span>
+              <span class="nada-btn change-page-size" data-value="50">50</span>
+              <span class="nada-btn change-page-size" data-value="100">100</span>
+            </div>
     </div>

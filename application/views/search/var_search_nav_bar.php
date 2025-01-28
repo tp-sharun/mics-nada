@@ -17,10 +17,10 @@
     
 ?>
 
-<div class="row mb-3">
+<div class="row ">
 
     
-    <div class="col-12 col-md-12 mt-2 mt-md-0 ">
+    <div class="col-12 col-md-12">
     <?php /* ?>
     <ul class="nav nav-tabs mb-3 font-weight-bold">
         <li class="nav-item">
@@ -32,14 +32,14 @@
     </ul>
     <?php */ ?>
         
-        <div class="filter-action-bar row">
+        <div class="filter-action-bar">
                 <?php if($found>0):?>
                 <?php /*
                 <div class="search-count mt-1 font-weight-bold col">
                     <?php echo number_format($found). ' '. t('results');?>
                 </div>
                 */?>
-                <div class="search-count mt-1 col-5">
+                <div class="search-count  paragraph-style-1 ">
                     <?php echo sprintf(t('showing_variables'),
                         number_format(($variables['limit']*$current_page)-$variables['limit']+1),
                         number_format(($variables['limit']*($current_page-1))+ count($variables['rows'])),
@@ -48,14 +48,14 @@
                 </div>
                                 
                 <?php if ($this->config->item("catalog_variable_view")!==FALSE):?>
-                <div class="col mt-1 wb-search-toggle">
-                    <div class="btn-group btn-group-toggle study-view-toggle" >
-                        <button type="button" class="btn btn-sm btn-outline-secondary rounded-left toggle_view" data-value="s" ><a href="<?php echo site_url('catalog/'.@$active_repo['repositoryid'].'?'.$study_view);?>"><?php echo t('Study view');?></a></button>
-                        <button type="button" class="btn btn-sm btn-outline-primary rounded-right active toggle_view" data-value="v"><?php echo t('Variable view');?></button>
+                <div class="wb-search-toggle">
+                    <div class="btn-group btn-group-toggle study-view-toggle tab-menu" >
+                        <button type="button" class="tab-item toggle_view" data-value="s" ><a href="<?php echo site_url('catalog/'.@$active_repo['repositoryid'].'?'.$study_view);?>"><?php echo t('Study view');?></a></button>
+                        <button type="button" class="tab-item active toggle_view" data-value="v"><?php echo t('Variable view');?></button>
                     </div>
                 </div>
                 <?php endif;?>
-                <div class="col mt-1 wb-search-sort">
+                <div class="wb-search-sort">
                     <div class="form-inline float-right ">
                         <label for="sort-by-select" class="sort-by-label">
                             <span class="sort-by-title d-none d-sm-block"></span>
@@ -85,8 +85,9 @@
     <?php $active_filters=$this->load->view("search/active_filter_tokens",null,true);?>    
     <?php if (!empty(trim($active_filters))):?>
         <div class="active-filters">
+            <span class="selected-filter">Selected filters</span>
             <?php echo $active_filters;?>
-            <a href="<?php echo site_url('catalog');?>?tab_type=<?php echo $search_options->tab_type; ?>" class="btn-reset-search btn btn-outline-danger btn-sm"><?php echo t('reset_search');?></a>
+            <a href="<?php echo site_url('catalog');?>?tab_type=<?php echo $search_options->tab_type; ?>" class="outlined-btn"><?php echo t('RESET');?></a>
         </div>        
     <?php endif;?>
 </div>    

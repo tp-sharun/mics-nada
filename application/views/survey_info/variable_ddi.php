@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     .fld-inline .fld-name{color:gray;}
     .fld-container,.clear{clear:both;}
 
@@ -11,7 +11,7 @@
 
     .var-breadcrumb li{display:inline;}
     .variables-container .bar-container {min-width:150px;}
-</style>
+</style> -->
 
 <?php /* ?>
 <div class="var-breadcrumb">
@@ -29,8 +29,8 @@
 
 
 <div class="variable-container">
-    <h2><?php echo $variable['labl'] . ' ('. $variable['name'].')';?></h2>
-    <h5 class="var-file"><?php echo t('data_file');?>: <a href="<?php echo site_url('catalog/'.$file['sid'].'/data-dictionary/'.$file['file_id']);?>"><?php echo $file['file_name'];?></a></h5>
+    <h2 class="paragraph-style-1 text-bold"><?php echo $variable['labl'] . ' ('. $variable['name'].')';?></h2>
+    <h5 class="var-file paragraph-style-1"><?php echo t('data_file');?>: <a href="<?php echo site_url('catalog/'.$file['sid'].'/data-dictionary/'.$file['file_id']);?>"><?php echo $file['file_name'];?></a></h5>
 
     <?php /* ?>
     <div class="wb-variables-export">
@@ -44,7 +44,7 @@
     </div>
     <?php */ ?>
     
-    <h3 class="xsl-subtitle"><?php echo t('overview');?></h3>
+    <h3 class="xsl-subtitle paragraph-style-3 text-bold title-with-underline-2"><?php echo t('overview');?></h3>
 
     <div class="row">
     <?php if(isset($variable['metadata']['var_sumstat'])):?>
@@ -52,8 +52,8 @@
             <?php foreach($variable['metadata']['var_sumstat'] as $sumstat): $sumstat=(object)$sumstat; ?>
                 <?php $wgtd=isset($sumstat->wgtd) && $sumstat->wgtd=='wgtd' ? '_wgtd' : '';?>
                 <div class="fld-inline sum-stat sum-stat-<?php echo $sumstat->type;?>-<?php echo $wgtd;?>">
-                    <span class="fld-name sum-stat-type"><?php echo t('var_'.$sumstat->type. $wgtd);?>: </span>
-                    <span class="fld-value sum-stat-value"><?php echo isset($sumstat->value) ? $sumstat->value : '-';?></span>
+                    <span class="fld-name sum-stat-type paragraph-style-2 "><?php echo t('var_'.$sumstat->type. $wgtd);?>: </span>
+                    <span class="fld-value sum-stat-value paragraph-style-2 "><?php echo isset($sumstat->value) ? $sumstat->value : '-';?></span>
                 </div>
             <?php endforeach;?>
         </div>
@@ -69,18 +69,18 @@
             <?php if (array_key_exists($stat_key,$variable['metadata']) && $variable['metadata'][$stat_key]!==null ):?>
             <?php $stat=$variable['metadata'][$stat_key];?>
             <div class="fld-inline sum-stat sum-stat-<?php echo $stat_key;?>">
-                <span class="fld-name sum-stat-type"><?php echo t($stat_key);?>: </span>
-                <span class="fld-value sum-stat-value"><?php echo t($stat);?></span>
+                <span class="fld-name sum-stat-type paragraph-style-2 "><?php echo t($stat_key);?>: </span>
+                <span class="fld-value sum-stat-value paragraph-style-2 "><?php echo t($stat);?></span>
             </div>
             <?php endif;?>
         <?php endforeach;?>
 
         <?php if (isset($variable['metadata']['var_val_range'])):?>
         <div class="fld-inline sum-stat sum-stat-range">
-            <span class="fld-name sum-stat-type"><?php echo t('var_range');?>: </span>
+            <span class="fld-name sum-stat-type paragraph-style-2 "><?php echo t('var_range');?>: </span>
                 <?php $range=$variable['metadata']['var_val_range'];?>
                 <?php  $range=(object)$range; ?>
-                <span class="fld-value sum-stat-value">
+                <span class="fld-value sum-stat-value paragraph-style-2 ">
                 <?php echo @$range->min;?> - <?php echo @$range->max;?>
             </span>
         </div>
@@ -88,10 +88,10 @@
         
         <?php if (isset($variable['metadata']['var_format'])):?>
         <div class="fld-inline sum-stat var-format">
-            <span class="fld-name var-format-fld"><?php echo t('var_format');?>: </span>
+            <span class="fld-name var-format-fld paragraph-style-2"><?php echo t('var_format');?>: </span>
             <?php $format=$variable['metadata']['var_format'];?>
             <?php  $format=(object)$format; ?>
-            <span class="fld-value format-value"><?php echo t(@$format->type);?></span>
+            <span class="fld-value format-value paragraph-style-2"><?php echo t(@$format->type);?></span>
         </div>
         <?php endif;?>
 

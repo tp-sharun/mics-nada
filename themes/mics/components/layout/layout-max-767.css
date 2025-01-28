@@ -1,0 +1,8 @@
+.page-content-section {
+  --block-space: 40px;
+}
+
+.wp-page-body.container-fluid .container {
+  padding-left: 0;
+  padding-right: 0;
+}

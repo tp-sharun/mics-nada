@@ -1,0 +1,55 @@
+.accordian-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--regular-gray6);
+}
+
+.accordian-content,
+.accordian-item:not(.active) .fa-minus-square,
+.accordian-item.active .fa-plus-square {
+  display: none;
+}
+
+.accordian-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.pnl-active+.accordian-content-section {
+  padding: 15px;
+  background-color: var(--regular-gray7);
+}
+
+.accordian-style-1 .icon-toggle i {
+  display: none;
+}
+
+.accordian-style-1 .icon-toggle {
+  background: url(../img/accordian-down.svg)no-repeat center center;
+  width: 11px;
+  height: 7px;
+}
+
+.accordian-style-1 .pnl-active .icon-toggle {
+  background: url(../img/accordian-active.svg)no-repeat center center;
+}
+
+.accordian-style-1 .icon-toggle {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordian-style-1 .pnl-active a {
+  color: var(--nada-blue-color);
+}
+
+.accoridan-middle-area {
+  padding-right: 50px;
+}
+
+.accordian-content-section {
+  color: var(--black);
+}

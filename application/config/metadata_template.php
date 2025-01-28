@@ -111,9 +111,8 @@ $config['video']=array(
  * 
  **/
 
-/*
+
 $config['metadata_template_preprocess_metadata']=array(
     'function'=>'preprocess_metadata',
     'file'=>'application/hooks/metadata_template_preprocess_metadata.php'
 );
-*/

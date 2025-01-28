@@ -140,15 +140,15 @@ $fields_arr=array(
     <?php return;?>
 <?php endif;?>
 
-<div style="padding-top:20px;">
-    <h5><?php echo t('study_resources');?></h5>
+<div>
+    <h5 class="heading-style-3 title-with-underline"><?php echo t('study_resources');?></h5>
     <!--<div class="subtext"><?php echo t('study_documentation_text');?></div>-->
-    <div class="resources">
+    <div class="resources ">
         <?php $class="resource"; ?>
         <?php foreach($resources as $key=>$resourcetype):?>
             <?php if (count($resourcetype)>0):?>
                 <fieldset>
-                    <legend>
+                    <legend class="heading-style-5 text-bold">
                         <?php echo isset($legend_labels[$key]) ? $legend_labels[$key] : t($key);?>
                     </legend>
                     <?php foreach($resourcetype as $row):?>
@@ -182,9 +182,9 @@ $fields_arr=array(
                         $ext=get_file_extension($row['filename']);
                         ?>
                         <?php if($class=="resource") {$class="resource alternate";} else{ $class="resource"; } ?>
-                        <div class="colx <?php echo $class;?>">
-                            <div class="resource-left-colx row">
-                                <div class="col-md-8 col-lg-9">
+                        <div class="colx <?php echo $class;?> accordian-item">
+                            <div class="resource-left-colx accordian-wrap">
+                                <div class="accordian-title">
                                 <span class="resource-info" 
                                     title="<?php echo t('click_to_view_information');?>" 
                                     alt="<?php echo t('view_more_information');?>" 
@@ -196,7 +196,7 @@ $fields_arr=array(
                                 </span>
                                 </div>
 
-                                <div class="col-md-4 col-lg-3">
+                                <div class="accordian-btn-area">
                                 <?php if($url!='' || $file_size!=''):?>
                                 <?php
                                     $download_str=array();
@@ -223,7 +223,7 @@ $fields_arr=array(
                                         data-isurl="<?php echo (int)$is_url;?>"
                                         data-extension="<?php echo html_escape($ext);?>"
                                         data-sid="<?php echo $row['survey_id'];?>"
-                                        class="download btn btn-outline-primary btn-sm btn-block">
+                                        class="download btn btn-outline-primary btn-sm outlined-btn external-icon">
                                             <i class="<?php echo $button_icon_class;?>" aria-hidden="true"></i> 
                                             <?php echo $download_str;?>
                                     </a>
@@ -256,7 +256,7 @@ $fields_arr=array(
                             
                             </div>
                             <?php if ($row['description']!='' || $row['title']!=''  || $row['toc']!='' ):?>
-                                <div id="info_<?php echo $row['resource_id'];?>" class="abstract">
+                                <div id="info_<?php echo $row['resource_id'];?>" class="abstract accordian-content">
 
                                     <table class="table table-striped grid-table tbl-resource-info" >
                                         <?php foreach ($row as $key=>$value):?>

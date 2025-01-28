@@ -1,0 +1,13 @@
+body {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-bottom {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}

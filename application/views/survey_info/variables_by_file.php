@@ -71,7 +71,7 @@
 
 <div class="row">
 
-    <div class="col-sm-2 col-md-2 col-lg-2 tab-sidebar hidden-sm-down sidebar-files">       
+    <div class="col-sm-2 col-md-2 col-lg-2 tab-sidebar hidden-sm-down sidebar-files detail-left-panel">       
 
         <form method="get" action="<?php echo site_url('catalog/'.$sid.'/search');?>" class="dictionary-search">
         <div class="input-group input-group-sm">            
@@ -100,73 +100,107 @@
 
     </div>
 
-    <div class="col-sm-10 col-md-10 col-lg-10 wb-border-left tab-body body-files">
+    <div class="col-sm-10 col-md-10 col-lg-10 wb-border-left tab-body body-files detail-right-panel">
 
         <div class="container-fluid" id="datafile-container">        
-            <h4><?php echo t('data_file');?>: <?php echo $file['file_name'];?></h4>
+            <h4 class="heading-style-4 space-20"><?php echo t('data_file');?>: <?php echo $file['file_name'];?></h4>
             
             <?php if($file['description']!=''):?>
                 <p><?php echo nl2br($file['description']);?></p>
             <?php endif;?>
         
-            <table class="data-file-bg1">
+            <div class="data-file-bg1">
                 <?php if ($file['case_count']):?>
-                <tr>
+               <!-- <tr>
                     <td style="width:100px;"><?php echo t('cases');?>: </td>
                     <td><?php echo $file['case_count'];?></td>
-                </tr>
+                </tr>-->
+                <div class="label-key-val-item paragraph-style-1 ">
+                  <div class="label-key">
+                    <?php echo t('cases');?>
+                  </div>
+                  <div class="label-value">
+                    <?php echo $file['case_count'];?>
+                  </div>
+                </div>
                 <?php endif;?>
                 
                 <?php if ($file['var_count']):?>
-                <tr>
+                <!-- <tr>
                     <td><?php echo t('variables');?>: </td>
                     <td><?php echo $file['var_count'];?></td>
-                </tr>
+                </tr> -->
+                <div class="label-key-val-item paragraph-style-1 ">
+                  <div class="label-key">
+                    <?php echo t('variables');?>:
+                  </div>
+                  <div class="label-value">
+                  <?php echo $file['var_count'];?>
+                  </div>
+                </div>
                 <?php endif;?>
 
                 <?php if(isset($file['producer']) && !empty($file['producer'])):?>
-                <tr>
+                <!-- <tr>
                     <td><?php echo t('producer');?>: </td>
                     <td><?php echo $file['producer'];?></td>
-                </tr>
+                </tr> -->
+                <div class="label-key-val-item paragraph-style-1 ">
+                  <div class="label-key">
+                    <?php echo t('producer');?>:
+                  </div>
+                  <div class="label-value">
+                    <?php echo $file['producer'];?>
+                  </div>
+                </div>
                 <?php endif;?>
 
                 <?php if(isset($file['notes']) && !empty($file['notes'])):?>
-                <tr>
+                <!-- <tr>
                     <td><?php echo t('notes');?>: </td>
                     <td><?php echo nl2br($file['notes']);?></td>
-                </tr>
+                </tr> -->
+                <div class="label-key-val-item paragraph-style-1 ">
+                  <div class="label-key">
+                    <?php echo t('notes');?>:
+                  </div>
+                  <div class="label-value">
+                    <?php echo nl2br($file['notes']);?>
+                  </div>
+                </div>
                 <?php endif;?>
 
-            </table>
+                </div>
             
         </div>
 
         
         <div class="container-fluid variables-container" id="variables-container">
-            <h4><?php echo t('variables');?></h4>
+            <h4 class="heading-style-4 space-20"><?php echo t('variables');?></h4>
             
             <?php $tr_class="";//"row-color1"; ?>
-            <div class="container-fluid table-variable-list data-dictionary ">
+            <div class="table-variable-list data-dictionary accordian-style-1">
                 <?php foreach($variables as $variable):?>
                     <?php //if($tr_class=="row-color1") {$tr_class="row-color2";} else{ $tr_class="row-color1"; } ?>
-                    <div class="row var-row <?php echo $tr_class;?>" >
+                    <div class=" var-row <?php echo $tr_class;?>" >
                     <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
-                        <div class="col-md-3">
-                            <div class="var-td p-1">
-                            <a class="var-id text-break" id="<?php echo md5($variable['vid']);?>" href="<?php echo site_url("catalog/$sid/variable/$file_id/{$variable['vid']}");?>?name=<?php echo urlencode($variable['name']);?>"><?php echo html_escape($variable['name']);?></a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-1 pr-3">
-                                <a class="var-id" id="<?php echo md5($variable['vid']);?>" href="<?php echo site_url("catalog/$sid/variable/$file_id/{$variable['vid']}");?>?name=<?php echo urlencode($variable['name']);?>">
-                                    <?php echo html_escape($variable['labl']);?>
-                                </a>
-                            </div>                            
-                        </div>                    
+                    <div class="row">    
+                      <div class="col-sm-3">
+                              <div class="var-td ">
+                              <a class="var-id text-break paragraph-style-1" id="<?php echo md5($variable['vid']);?>" href="<?php echo site_url("catalog/$sid/variable/$file_id/{$variable['vid']}");?>?name=<?php echo urlencode($variable['name']);?>"><?php echo html_escape($variable['name']);?></a>
+                              </div>
+                          </div>
+                          <div class="col accoridan-middle-area">
+                              <div class="">
+                                  <a class="var-id paragraph-style-1" id="<?php echo md5($variable['vid']);?>" href="<?php echo site_url("catalog/$sid/variable/$file_id/{$variable['vid']}");?>?name=<?php echo urlencode($variable['name']);?>">
+                                      <?php echo html_escape($variable['labl']);?>
+                                  </a>
+                              </div>                            
+                          </div>                    
+                      </div>
                     </div>
-                    <div class="row var-info-panel" id="pnl-<?php echo md5($variable['vid']);?>">
-                        <div class="panel-td p-4"></div>
+                    <div class="accordian-content-section" id="pnl-<?php echo md5($variable['vid']);?>">
+                        <div class="panel-td "></div>
                     </div>                
                 <?php endforeach;?>
             </div>

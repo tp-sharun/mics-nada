@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
 .metadata-sidebar-container .nav .active{
 	background:#e9ecef;		
 }
@@ -76,7 +76,7 @@
   background-color: rgba(0, 0, 0, .5);
   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
-</style>
+</style> -->
 <?php
 /*
  * survey info page template
@@ -98,7 +98,8 @@ if(isset($survey['nation']) &&  trim($survey['nation']) !='' ){
 		data-idno="<?php echo $survey['idno'];?>"
 	></span>
 
-<div class="container-fluid page-header">
+<!-- <div class="container-fluid page-header"> -->
+<div class="page-header">
 <div class="container">
 <?php if(intval($published)===0):?>
 	<?php if($this->session->userdata('user_id')):?>
@@ -178,17 +179,17 @@ if($this->config->item("guests_hide_microdata_tab")===true && !$this->ion_auth->
 
 
 <!-- Nav tabs -->
-<ul class="nav nav-tabs wb-nav-tab-space flex-wrap" role="tablist">
-	<?php foreach($page_tabs as $tab_name=>$tab):?>
+<ul class="tab-menu detail-tab" role="tablist">
+	<?php  foreach($page_tabs as $tab_name=>$tab):?>
 		<?php if ($tab['show_tab']==0){continue;};?>
 		<?php if($tab_name=='get_microdata'):?>
-			<li class="nav-item nav-item-get-microdata tab-<?php echo $tab_name;?> <?php echo ($tab_name==$active_tab) ? $active_tab_class : '';?>" >
+			<li class="nav-item tab-item nav-item-get-microdata tab-<?php echo $tab_name;?> <?php echo ($tab_name==$active_tab) ? $active_tab_class : '';?>" >
 				<a href="<?php echo $tab['url'];?>" class="nav-link wb-nav-link wb-text-link-uppercase " role="tab" data-id="related-materials" >
 					<span class="get-microdata icon-da-<?php echo $data_access_type;?>"></span> <?php echo $tab['label'];?>
 				</a>
 			</li>                            
 		<?php else:?>
-			<li class="nav-item tab-<?php echo $tab_name;?> <?php echo ($tab_name==$active_tab) ? $active_tab_class : '';?>"  >
+			<li class="nav-item tab-item tab-<?php echo $tab_name;?> <?php echo ($tab_name==$active_tab) ? $active_tab_class : '';?>"  >
 				<a href="<?php echo $tab['url'];?>" class="nav-link wb-nav-link wb-text-link-uppercase <?php echo ($tab_name==$active_tab) ? $active_tab_class : '';?>" role="tab"  data-id="related-materials" ><?php echo $tab['label'];?></a>
 			</li>
 		<?php endif;?>
@@ -196,7 +197,7 @@ if($this->config->item("guests_hide_microdata_tab")===true && !$this->ion_auth->
 	
 	<!--review-->
 	<?php if(isset($page_tabs['review_study']) && $page_tabs['review_study']===TRUE):?>                    
-		<li class="nav-item tab-<?php echo $tab_name;?> <?php echo ($tab_name==$active_tab) ? $active_tab_class : '';?>" >
+		<li class="nav-item tab-item tab-<?php echo $tab_name;?> <?php echo ($tab_name==$active_tab) ? $active_tab_class : '';?>" >
 			<a href="<?php echo site_url('catalog/'.$survey_id.'/review');?>" class="nav-link wb-nav-link wb-text-link-uppercase <?php echo ($tab=='review') ? $active_tab_class : '';?>" role="tab"  data-id="review">
 				<?php echo t('review_study');?>
 			</a>
@@ -208,6 +209,7 @@ if($this->config->item("guests_hide_microdata_tab")===true && !$this->ion_auth->
 </div>
 
 
+<div class="page-content-section">
 
 <div class="container study-metadata-body-content <?php echo $right_sidebar;?>" >
 
@@ -230,15 +232,15 @@ if($this->config->item("guests_hide_microdata_tab")===true && !$this->ion_auth->
     <div class="tab-body-no-sidebar-x"><?php echo $body;?></div>
     <?php endif;?>
 
-	<div class="mt-5">                
-            <a class="btn btn-sm btn-secondary" href="<?php echo site_url('catalog');?>"><i class="fas fa-arrow-circle-left"></i> <?php echo t('Back to Catalog');?></a>
+	<div class="back-btn-wrap">                
+            <a class="back-btn" href="<?php echo site_url('catalog');?>"><i class="fas fa-arrow-circle-left"></i> <?php echo t('Back to Catalog');?></a>
         </div>
   </div>
 </div>
 <!-- end-tabs-->    
    </div> 
 </div>
-
+</div>
 
 <!--survey summary resources-->
 <script type="text/javascript">

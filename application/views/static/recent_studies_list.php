@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     .recent-studies-list-home h5 {
         margin-bottom:0px;
     }
@@ -14,7 +14,7 @@
     .survey-row{
         padding:10px 5px;
     }
-</style>
+</style> -->
 <?php
 
 $type_icons=array(
@@ -31,7 +31,7 @@ $type_icons=array(
 );
 ?>
 
-<h3><?php echo t('latest_additions');?></h3>
+<h3 class="heading-style-3"><?php echo t('latest_additions');?></h3>
 <?php
     $regional_search=($this->config->item("regional_search")===FALSE) ? 'no' : $this->config->item("regional_search");
 ?>
@@ -43,7 +43,7 @@ $type_icons=array(
     foreach($rows as $row):
     $counter++; ?>
 
-        <div class="survey-row recent-studies-list-home border-bottom">
+        <div class="survey-row recent-studies-list-home listing-item">
             <div class="row">
                 <div class="col-12 col-lg-12">
                                 
@@ -55,7 +55,7 @@ $type_icons=array(
                             <?php endif;?>                    
                         </div>
                         <div>                        
-                            <h5><a href="<?php echo site_url(); ?>/catalog/<?php echo $row['id']; ?>"  title="<?php echo $row['title']; ?>" >
+                            <h5 class="heading-style-5 listing-title"><a href="<?php echo site_url(); ?>/catalog/<?php echo $row['id']; ?>"  title="<?php echo $row['title']; ?>" >
                                 <span class="study-title"><?php echo $row['title'];?>
                                     <?php if(isset($row['subtitle'])):?>
                                         <div class="study-subtitle"><?php echo $row['subtitle'];?></div>
@@ -72,15 +72,15 @@ $type_icons=array(
                                 ?>
 
                                 <?php if(!empty($dates)):?>
-                                    <span class="dataset-nation-year text-secondary text-small"><?php echo $row['nation'] ? $row['nation'].", ".$dates : $dates;?></span>
+                                    <span class="dataset-nation-year paragraph-style-2"><?php echo $row['nation'] ? $row['nation'].", ".$dates : $dates;?></span>
                                 <?php endif; ?>
 
 
                                 <?php if (isset($row['authoring_entity']) && $row['authoring_entity']!=''):?>
-                                    <div class="sub-title"><?php echo $row['authoring_entity'];?></div>
+                                    <div class="sub-title survey-desc paragraph-style-2"><?php echo $row['authoring_entity'];?></div>
                                 <?php endif;?>
 
-                                <div class="survey-stats">                        
+                                <div class="survey-stats paragraph-style-2">                        
                                     <span><?php echo date("M d, Y",$row['changed']);?></span>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ $type_icons=array(
         </div>
     <?php endforeach;?>
     <p>
-        <a href="<?php echo site_url();?>/catalog/history" class="btn btn-link btn-sm float-left" >View more »</a>
+        <a href="<?php echo site_url();?>/catalog/history" class="link-style" >View more »</a>
     </p>
 <?php else: ?>
     <div>

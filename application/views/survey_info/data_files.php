@@ -11,7 +11,7 @@
     $var_count_col=array_filter(array_column($files,'var_count'));
 ?>
 
-<h3><?php echo t('data_dictionary');?></h3>
+<h3 class="heading-style-3 title-with-underline"><?php echo t('data_dictionary');?></h3>
 <table class="table table-data-files ddi-table data-dictionary" >
     <tbody>
     <tr>

@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3">
-            <div class="navbar-collapse sticky-top metadata-sidebar-container">
+        <div class="col-md-3 detail-left-panel">
+            <div class="navbar-collapse sticky-top metadata-sidebar-container active-left-panel">
             <div class="nav flex-column">
             <?php foreach($sidebar as $key=>$item):?>
                 <li class="nav-item">                    
@@ -11,7 +11,7 @@
             </div>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 detail-right-panel">
             <?php echo $html;?>
         </div>
     </div>
@@ -23,7 +23,7 @@
     });
 </script>    
 
-<style>
+<!-- <style>
 
 .study-metadata h2{
     border-bottom:1px solid #e8e8e8;
@@ -48,4 +48,4 @@
 .badge-tags{
     font-size:14px!important;
 }
-</style>
+</style> -->

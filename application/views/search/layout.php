@@ -11,7 +11,7 @@
     font-size:small;
 }
 </style>
-<div class="container catalog-search-container">
+<div class=" catalog-search-container">
 <form method="get" id="catalog-search-form">    
     <input type="hidden" name="tab_type" id="tab_type" value="<?php echo form_prep($search_options->tab_type);?>"/>
     <?php //if($search_options->page>1):?>
@@ -61,21 +61,23 @@
         <?php endif;?>
     <?php endif;?>
 
+    <div class="container">
 
+    <div class="page-content-section filter-listing-wrap">
 <div class="row">
 
     <?php if(isset($filters) && count($filters)>0):?>
     <!--left side bar -->
-    <div class="col-12 col-lg-3 col-md-4">
+    <div class="col-12 col-lg-3 col-md-4 filter-panel">
 
         <nav class="navbar navbar-expand-sm navbar-expand-filters">
             
-            <button class="navbar-toggler btn-block navbar-toggler-filter" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="btn btn-outline-secondary btn-block" xstyle="font-size:12px"><i class="fa fa-sliders" aria-hidden="true"></i> Filters</span>
+            <button class="navbar-toggler btn-block navbar-toggler-filter filter-responsive" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="outlined-btn"><i class="fa fa-sliders" aria-hidden="true"></i> Filters</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <div class="filters-container">
+                <div class="filters-container" id="filter-parent">
                     <?php foreach($filters as $filter):?>
                         <?php echo $filter;?>
                     <?php endforeach;?>
@@ -90,7 +92,7 @@
 
 
     <!-- listing page -->
-    <div class="<?php echo (isset($filters) && count($filters)>0 ) ? 'col-lg-9 col-md-8' : 'col-12';?>">
+    <div class="<?php echo (isset($filters) && count($filters)>0 ) ? 'col-lg-9 col-md-8 listing-wrap' : 'col-12';?>">
 
     <?php if($search_box_orientation=='inline'):?>
         <!--search bar-->
@@ -116,16 +118,16 @@
 </form>
 
 </div>
-
-
+</div>
+</div>
 <!-- variable comparison -->
 <div class="variable-comparison-popup-backdrop wb-collapsed" ></div>
 <div class="fixed-bottom variable-comparison-popup wb-collapsed" style="display:none;">
 
-    <div class="container pt-2 mt-4 mb-3 d-none d-md-block" >
-       <div class="row wb-var-panel">
-           <div class="col-12 wb-var-title">
-               <div class="align-middle mt-2">
+    <div class="container d-none d-md-block" >
+       <div class=" wb-var-panel">
+           <div class=" wb-var-title">
+               <div class="comapre-detail">
                    <?php echo t("Compare variables");?>
                    <span class="var-in-cart badge badge-light"></span>
                 </div>
@@ -134,7 +136,7 @@
                     <i class="fa fa-angle-down wb-var-handler-down"></i>
                </div>
             </div>
-            <div class="col-12 var-list wb-var-body">
+            <div class=" var-list scroll-style wb-var-body">
 
                 <!--<span class="var-box">
                 <i class="fa fa-address-card" aria-hidden="true"></i>
@@ -142,10 +144,10 @@
                 </span>-->
     
             </div>
-           <div class="col-12 wb-var-actions">
-               <div class="align-middle mt-2"> 
-                    <button class="btn btn-link btn-sm rounded clear-variables"><?php echo t("Clear");?></button>
-                    <a target="_blank" class="btn btn-primary btn-sm rounded" href="<?php echo site_url('catalog/compare');?>"><?php echo t("Compare");?></a>                   
+           <div class=" wb-var-actions">
+               <div class="variable-compare-btn-wrap"> 
+                    <button class="btn-style-5  clear-variables"><?php echo t("Clear");?></button>
+                    <a target="_blank" class="btn-style-5 " href="<?php echo site_url('catalog/compare');?>"><?php echo t("Compare");?></a>                   
                 </div>
            </div>
        </div>
@@ -348,8 +350,8 @@ var i18n=
 
                 var html =`<div class="var-box" id="var-${row['sid']}__data['vid']" data-value="${row['sid']}/${row['vid']}">
                     <!--<a target="_blank" href="${url}"><i class="fa fa-address-card" aria-hidden="true"></i></a>-->
-                    <a class="text-white font-weight-bold var-name dlg link" target="_blank" data-url="${url}" href="${url}">${row['name']}</a>
-                    <div class="text-light var-description">${row['idno']}</div>
+                    <a class="var-name dlg link" target="_blank" data-url="${url}" href="${url}">${row['name']}</a>
+                    <div class="var-description">${row['idno']}</div>
                     <i class="fa fa-times faclose var-remove" aria-hidden="true" data-value="${row['sid']}/${row['vid']}"></i>
                 </div>`;
 

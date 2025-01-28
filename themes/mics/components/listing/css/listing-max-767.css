@@ -1,0 +1,7 @@
+.survey-details span {
+  text-align: left;
+}
+
+.survey-details>*:not(:last-child) {
+  margin-bottom: 7px;
+}
